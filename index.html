@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>English PROGRESS</title>
+<style>
+  :root{
+    --bg:#f6f8fb; --card:#fff; --accent:#3b82f6; --accent-2:#10b981; --muted:#64748b;
+    --ok:#16a34a; --bad:#ef4444; --phrase:#8b5cf6;
+  }
+  html,body{height:100%;margin:0;font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN",Arial,sans-serif;background:var(--bg);color:#0f172a}
+  .wrap{max-width:720px;margin:24px auto;padding:16px}
+  .card{background:var(--card);border-radius:14px;box-shadow:0 6px 18px rgba(15,23,42,0.06);padding:18px}
+  header.app-header{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+  h1{margin:0;font-size:20px;font-weight:700}
+  p.sub{margin:0;color:var(--muted);font-size:13px}
+  /* Mode tabs */
+  .mode-tabs{display:flex;gap:8px;margin-bottom:16px;border-bottom:2px solid #e6eefc}
+  .mode-tab{background:transparent;border:0;padding:12px 20px;font-weight:700;cursor:pointer;color:var(--muted);border-bottom:3px solid transparent;transition:all 0.2s}
+  .mode-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+  .mode-tab.phrase-mode.active{color:var(--phrase);border-bottom-color:var(--phrase)}
+  /* Start menu */
+  .start-list{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+  .btn{cursor:pointer;border:0;border-radius:10px;padding:12px 14px;font-weight:700}
+  .btn-primary{background:linear-gradient(90deg,var(--accent),#2563eb);color:white}
+  .btn-phrase{background:linear-gradient(90deg,var(--phrase),#7c3aed);color:white}
+  .btn-ghost{background:#f8fafc;border:1px solid #e6eefc;color:#0f172a}
+  .btn-group{background:#10b981;color:white}
+  .mode-actions{display:flex;gap:8px;flex-wrap:wrap}
+  .small{font-size:13px;color:var(--muted)}
+  .group-buttons{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-top:12px}
+  /* Game screen */
+  .progress-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;gap:8px}
+  .progress-info{display:flex;flex-direction:column;align-items:flex-start}
+  .progress-bar-bg{width:100%;height:10px;background:#e6eefc;border-radius:999px;overflow:hidden;margin-top:6px}
+  .progress-bar{height:100%;width:0;background:linear-gradient(90deg,var(--accent),#60a5fa)}
+  .question-big{font-size:1.6rem;font-weight:800;text-align:center;padding:22px 12px;background:linear-gradient(180deg,#fbfdff,#fff);border-radius:10px;margin:12px 0}
+  .input-example{text-align:center;color:var(--muted);font-size:14px;margin-bottom:8px;padding:6px}
+  .input-example strong{color:var(--accent);font-weight:700}
+  input[type="text"]{width:100%;padding:14px;border-radius:10px;border:1px solid #dbeafe;font-size:18px;box-sizing:border-box}
+  .controls{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+  .feedback{margin-top:14px;padding:12px;border-radius:10px}
+  .feedback.ok{background:#ecfdf5;border:1px solid #bbf7d0;color:#065f46}
+  .feedback.half{background:#fff7ed;border:1px solid #ffd8a8;color:#92400e}
+  .feedback.ng{background:#fff1f2;border:1px solid #fecaca;color:#7f1d1d}
+  .next-prompt{text-align:center;margin-top:12px;padding:10px;background:#f0f9ff;border-radius:8px;color:var(--accent);font-weight:700;animation: pulse 1.5s ease-in-out infinite}
+  @keyframes pulse {0%, 100% { opacity: 1; } 50% { opacity: 0.6; }}
+  .bottom-area{margin-top:18px;display:flex;flex-direction:column;gap:10px}
+  .muted{color:var(--muted);font-size:13px}
+  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .chip{background:#f8fafc;padding:6px 10px;border-radius:999px;border:1px solid #e6eefc;font-weight:600}
+  .link-btn{background:transparent;border:0;color:var(--accent);cursor:pointer;font-weight:700;padding:6px}
+  .hidden{display:none}
+  .flex-col{display:flex;flex-direction:column;gap:10px}
+  table{width:100%;border-collapse:collapse}
+  td,th{padding:8px;border-bottom:1px solid #f1f5f9;text-align:left}
+  th{font-weight:700;background:#f8fafc}
+  .word-list-item{padding:10px;border-bottom:1px solid #f1f5f9;display:flex;justify-content:space-between;align-items:center}
+  .word-list-item:hover{background:#f8fafc}
+  .word-en{font-weight:700;color:#0f172a}
+  .word-jp{color:var(--muted);font-size:14px}
+  .word-ka{color:var(--accent);font-size:13px}
+  .badge-new{background:#10b981;color:white;padding:4px 8px;border-radius:999px;font-size:11px;font-weight:700}
+  @media (max-width:520px){.question-big{font-size:1.3rem;padding:18px} input[type="text"]{font-size:16px}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header class="app-header">
+        <h1>English PROGRESS</h1>
+        <p class="sub">日本語訳を見て、英語のスペルかカタカナで答えよう。苦手は自動で優先学習。</p>
+      </header>
+
+      <!-- MODE TABS -->
+      <div class="mode-tabs">
+        <button class="mode-tab active" onclick="app.switchMode('word')">📖 単語モード</button>
+        <button class="mode-tab phrase-mode" onclick="app.switchMode('phrase')">💬 短文モード</button>
+      </div>
+
+      <!-- START MENU -->
+      <div id="startScreen" class="">
+        <!-- Word Mode Menu -->
+        <div id="wordMenu" class="">
+          <div class="small">単語：学習方法を選んでスタート</div>
+          <div class="start-list">
+            <button class="btn btn-primary" onclick="app.begin('normal',10,'word')">全単語から 10問</button>
+            <button class="btn btn-ghost" onclick="app.begin('weak10',10,'word')">苦手集中 10問</button>
+            <button class="btn btn-ghost" onclick="app.begin('new',10,'word')">🆕 新規単語優先 10問</button>
+          </div>
+
+          <div style="margin-top:20px">
+            <div class="small" style="margin-bottom:8px">📚 グループ別学習（100語ずつ）</div>
+            <div class="group-buttons">
+              <button class="btn btn-group" onclick="app.beginGroup(1)">グループ 1<br><span style="font-size:11px">1-100</span></button>
+              <button class="btn btn-group" onclick="app.beginGroup(2)">グループ 2<br><span style="font-size:11px">101-200</span></button>
+              <button class="btn btn-group" onclick="app.beginGroup(3)">グループ 3<br><span style="font-size:11px">201-300</span></button>
+              <button class="btn btn-group" onclick="app.beginGroup(4)">グループ 4<br><span style="font-size:11px">301-400</span></button>
+              <button class="btn btn-group" onclick="app.beginGroup(5)">グループ 5<br><span style="font-size:11px">401-500</span></button>
+              <button class="btn btn-group" onclick="app.beginGroup(6)">グループ 6<br><span style="font-size:11px">501-600</span></button>
+              <button class="btn btn-group" onclick="app.beginGroup(7)">グループ 7<br><span style="font-size:11px">601-700</span></button>
+              <button class="btn btn-group" onclick="app.beginGroup(8)">グループ 8<br><span style="font-size:11px">701-800</span></button>
+              <button class="btn btn-group" onclick="app.beginGroup(9)">グループ 9<br><span style="font-size:11px">801-900</span></button>
+              <button class="btn btn-group" onclick="app.beginGroup(10)">グループ 10<br><span style="font-size:11px">901-1000</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phrase Mode Menu -->
+        <div id="phraseMenu" class="hidden">
+          <div class="small">短文：学習方法を選んでスタート</div>
+          <div class="start-list">
+            <button class="btn btn-phrase" onclick="app.begin('normal',10,'phrase')">全短文から 10問</button>
+            <button class="btn btn-ghost" onclick="app.begin('weak10',10,'phrase')">苦手集中 10問</button>
+            <button class="btn btn-ghost" onclick="app.begin('new',10,'phrase')">🆕 新規短文優先 10問</button>
+          </div>
+        </div>
+
+        <div style="margin-top:14px" class="small">
+          <label><input type="checkbox" id="showAllJPStart" checked> スタート時に日本語訳のフル表示を許可</label>
+        </div>
+
+        <div style="margin-top:10px" class="small">
+          その他：
+          <button class="link-btn" onclick="app.showStats()">進捗を見る</button> / 
+          <button class="link-btn" onclick="app.showWeakList()">苦手一覧</button> / 
+          <button class="link-btn" onclick="app.showWordList()">📚 一覧</button>
+        </div>
+      </div>
+
+      <!-- GAME SCREEN -->
+      <div id="gameScreen" class="hidden">
+        <div class="progress-row">
+          <div class="progress-info">
+            <div id="progressText" style="font-weight:800">0 / 0</div>
+            <div class="muted">進行</div>
+          </div>
+          <div style="flex:1;margin-left:12px">
+            <div class="progress-bar-bg"><div id="progressBar" class="progress-bar"></div></div>
+          </div>
+          <div style="min-width:80px;text-align:right">
+            <button class="link-btn" onclick="app.backToMenu()">メニューへ戻る</button>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:24px">
+          <div id="questionBox" style="font-size:28px;font-weight:800"></div>
+          <button id="speakBtn" onclick="app.speakQuestion()" style="border:none;background:none;cursor:pointer;font-size:24px">🔊</button>
+        </div>
+
+        <div class="input-example">
+          答え方の例：<strong>apple</strong>（英単語）／ <strong>アップル</strong>（カタカナ）
+        </div>
+
+        <input id="answerInput" type="text" placeholder="">
+
+        <div class="controls">
+          <button class="btn btn-primary" id="checkBtn" onclick="app.handleCheck()">答え合わせ</button>
+          <button class="btn btn-ghost" id="skipBtn" onclick="app.handleSkip()">スキップ</button>
+        </div>
+
+        <div id="feedbackArea"></div>
+        <div id="nextPrompt" class="hidden"></div>
+
+        <div class="bottom-area">
+          <div class="row">
+            <div class="chip" id="modeChip">Mode</div>
+            <div class="muted" id="hintText">※ カタカナOK（2文字差まで許容）</div>
+          </div>
+          <div class="row">
+            <div class="small">表示: <label><input type="checkbox" id="showAllJP" checked> 日本語訳を全部表示</label></div>
+            <div class="small" style="margin-left:auto"><span id="itemTypeLabel">語彙</span>: <span id="wordCount">0</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STATS SCREEN -->
+      <div id="statsScreen" class="hidden card" style="margin-top:16px">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-weight:800">学習の記録</div>
+            <div class="small">今日／直近7日で学習状況を確認できます</div>
+          </div>
+          <div><button class="link-btn" onclick="app.hideStats()">閉じる</button></div>
+        </div>
+
+        <div style="margin-top:12px">
+          <div class="small" id="todaySummary">読み込み中…</div>
+          <table style="margin-top:8px">
+            <thead><tr><th>日付</th><th>問題数</th><th>正解率</th></tr></thead>
+            <tbody id="historyBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- WEAK LIST SCREEN -->
+      <div id="weakScreen" class="hidden card" style="margin-top:16px">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-weight:800" id="weakListTitle">苦手一覧</div>
+            <div class="small">重いほどよく出題されます（0〜5）</div>
+          </div>
+          <div><button class="link-btn" onclick="app.hideWeakList()">閉じる</button></div>
+        </div>
+
+        <div style="margin-top:12px">
+          <div id="weakBody"></div>
+        </div>
+      </div>
+
+      <!-- WORD LIST SCREEN -->
+      <div id="wordListScreen" class="hidden card" style="margin-top:16px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <div>
+            <div style="font-weight:800" id="listTitle">📚 登録一覧</div>
+            <div class="small">現在登録されている全項目（<span id="totalWordCount">0</span>）</div>
+          </div>
+          <div><button class="link-btn" onclick="app.hideWordList()">閉じる</button></div>
+        </div>
+
+        <div style="margin-bottom:10px">
+          <input type="text" id="wordSearchInput" placeholder="検索..." style="width:100%;padding:10px;border-radius:8px;border:1px solid #dbeafe">
+        </div>
+
+        <div id="wordListContainer" style="max-height:500px;overflow-y:auto"></div>
+      </div>
+
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
