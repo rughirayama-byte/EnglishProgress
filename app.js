@@ -1108,15 +1108,122 @@ const app = {
     {en:"Glad to hear that!", ka:"グラットゥヒアザッ", jp:"良かった！"},
     {en:"They're doing great!", ka:"ゼアドゥーイングレイ", jp:"元気だよ！"},
     {en:"That's awesome though!", ka:"ザッツオーサムドウ", jp:"すごくいいことだね！"},
-    {en:"When are you planning to come back?", ka:"ウェンアーユプランニントゥカムバック", jp:"いつ頃復帰予定なの？"}
+    {en:"When are you planning to come back?", ka:"ウェンアーユプランニントゥカムバック", jp:"いつ頃復帰予定なの？"},
+  ],
+
+  rearrangeProblems: [
+    {jp:"彼女について心配しています", correctEn:"I am worried about her", choices:["I","am","worried","about","her","for","to"], difficulty:"beginner"},
+    {jp:"2週間後に歩けます", correctEn:"I will be able to walk in two weeks", choices:["I","will","be","able","to","walk","in","two","weeks","for","after"], difficulty:"beginner"},
+    {jp:"会社のクラブでラグビーをしています", correctEn:"I play rugby in my company club", choices:["I","play","rugby","in","my","company","club","at","the"], difficulty:"beginner"},
+    {jp:"試合中に怪我をしました", correctEn:"I got injured during a game", choices:["I","got","injured","during","a","game","in","at"], difficulty:"beginner"},
+    {jp:"膝を怪我しました", correctEn:"I got injured in my knee", choices:["I","got","injured","in","my","knee","on","at"], difficulty:"beginner"},
+    {jp:"彼はトイプードルです", correctEn:"He is a toy poodle", choices:["He","is","a","toy","poodle","the","an"], difficulty:"beginner"},
+    {jp:"彼の名前はツナです", correctEn:"His name is Tuna", choices:["His","name","is","Tuna","He","are"], difficulty:"beginner"},
+    {jp:"私の彼女がそれをします", correctEn:"My girlfriend does it", choices:["My","girlfriend","does","it","do","a"], difficulty:"beginner"},
+    {jp:"彼のお気に入りのおもちゃはボールです", correctEn:"His favorite toy is a ball", choices:["His","favorite","toy","is","a","ball","the","toys"], difficulty:"beginner"},
+    {jp:"彼女は彼のお母さんです", correctEn:"She is his mother", choices:["She","is","his","mother","he","her"], difficulty:"beginner"},
+    {jp:"私の彼女が散歩に連れて行きます", correctEn:"My girlfriend takes him for walks", choices:["My","girlfriend","takes","him","for","walks","take","a"], difficulty:"beginner"},
+    {jp:"彼は私を愛しています", correctEn:"He loves me", choices:["He","loves","me","love","is"], difficulty:"beginner"},
+    {jp:"彼女は私について考えています", correctEn:"She thinks about me", choices:["She","thinks","about","me","think","of"], difficulty:"beginner"},
+    {jp:"彼はボールを持って帰ってきます", correctEn:"He brings it back to me", choices:["He","brings","it","back","to","me","bring","for"], difficulty:"beginner"},
+    {jp:"彼女はそれについて知っています", correctEn:"She knows about it", choices:["She","knows","about","it","know","of"], difficulty:"beginner"},
+    {jp:"ラグビーをしていました", correctEn:"I was playing rugby", choices:["I","was","playing","rugby","were","play"], difficulty:"beginner"},
+    {jp:"病院に滞在していました", correctEn:"I was staying in a hospital", choices:["I","was","staying","in","a","hospital","were","stay"], difficulty:"beginner"},
+    {jp:"今向かっています", correctEn:"I am on my way", choices:["I","am","on","my","way","is","in"], difficulty:"beginner"},
+    {jp:"犬と遊んでいます", correctEn:"I am playing with my dog", choices:["I","am","playing","with","my","dog","is","a"], difficulty:"beginner"},
+    {jp:"リハビリを始めました", correctEn:"I started rehabilitation", choices:["I","started","rehabilitation","start","a"], difficulty:"beginner"},
+    {jp:"運転が好きです", correctEn:"I like driving", choices:["I","like","driving","drive","to"], difficulty:"beginner"},
+    {jp:"ラーメンが食べたいです", correctEn:"I want to eat ramen", choices:["I","want","to","eat","ramen","eating","a"], difficulty:"beginner"},
+    {jp:"犬と遊ぶのが好きです", correctEn:"I like playing with my dog", choices:["I","like","playing","with","my","dog","play","to"], difficulty:"beginner"},
+    {jp:"休憩したいです", correctEn:"I want to take a break", choices:["I","want","to","take","a","break","taking"], difficulty:"beginner"},
+    {jp:"もっとコーヒーが必要です", correctEn:"I need more coffee", choices:["I","need","more","coffee","a","the"], difficulty:"beginner"},
+    {jp:"私の計画は車で行くことです", correctEn:"My plan is to go by car", choices:["My","plan","is","to","go","by","car","for","will"], difficulty:"beginner"},
+    {jp:"休みの日はいつも犬と遊びます", correctEn:"I always play with my dog on my free days", choices:["I","always","play","with","my","dog","on","my","free","days","in","at"], difficulty:"beginner"},
+    {jp:"それについて心配していません", correctEn:"I do not worry about it", choices:["I","do","not","worry","about","it","am","for"], difficulty:"beginner"},
+    {jp:"4ヶ月前に一緒に暮らし始めました", correctEn:"I started living with him four months ago", choices:["I","started","living","with","him","four","months","ago","start","before"], difficulty:"beginner"},
+    {jp:"彼がどう思っているかわかりません", correctEn:"I do not know what he thinks", choices:["I","do","not","know","what","he","thinks","think","about"], difficulty:"beginner"},
+    {jp:"強くなって戻るのが待ちきれません", correctEn:"I can not wait to come back stronger", choices:["I","can","not","wait","to","come","back","stronger","more","very"], difficulty:"beginner"},
+    {jp:"それを望んでいます", correctEn:"I hope so", choices:["I","hope","so","it","that"], difficulty:"beginner"},
+    {jp:"そう思います", correctEn:"I think so", choices:["I","think","so","it","that"], difficulty:"beginner"},
+    {jp:"自分に期待しています", correctEn:"I have expectations for myself", choices:["I","have","expectations","for","myself","expectation","to"], difficulty:"beginner"},
+    {jp:"とても恋しいです", correctEn:"I miss it very much", choices:["I","miss","it","very","much","a","lot"], difficulty:"beginner"},
+    {jp:"2週間後には歩けるようになります", correctEn:"I will be able to walk in two weeks", choices:["I","will","be","able","to","walk","in","two","weeks","can","for"], difficulty:"beginner"},
+    {jp:"車で行く予定です", correctEn:"I plan to go by car", choices:["I","plan","to","go","by","car","for","will"], difficulty:"beginner"},
+    {jp:"すぐに戻ります", correctEn:"I will be back soon", choices:["I","will","be","back","soon","am","come"], difficulty:"beginner"},
+    {jp:"一緒に強くなりましょう", correctEn:"Let us get stronger together", choices:["Let","us","get","stronger","together","more","very"], difficulty:"beginner"},
+    {jp:"もう少し頑張れそうです", correctEn:"I think I can push a bit more", choices:["I","think","can","push","a","bit","more","could","little"], difficulty:"beginner"},
+    {jp:"東京に住んでいます", correctEn:"I live in Tokyo", choices:["I","live","in","Tokyo","at","on"], difficulty:"beginner"},
+    {jp:"朝に運動します", correctEn:"I exercise in the morning", choices:["I","exercise","in","the","morning","at","on"], difficulty:"beginner"},
+    {jp:"週末に会いましょう", correctEn:"Let us meet on the weekend", choices:["Let","us","meet","on","the","weekend","in","at"], difficulty:"beginner"},
+    {jp:"彼のために料理します", correctEn:"I cook for him", choices:["I","cook","for","him","to","with"], difficulty:"beginner"},
+    {jp:"彼と一緒に住んでいます", correctEn:"I live with him", choices:["I","live","with","him","to","and"], difficulty:"beginner"},
+    {jp:"元気ですか", correctEn:"How are you doing", choices:["How","are","you","doing","do","is"], difficulty:"beginner"},
+    {jp:"久しぶりです", correctEn:"Long time no see", choices:["Long","time","no","see","not","a"], difficulty:"beginner"},
+    {jp:"会えて嬉しいです", correctEn:"Good to see you", choices:["Good","to","see","you","is","for"], difficulty:"beginner"},
+    {jp:"最近忙しかったです", correctEn:"I have been busy lately", choices:["I","have","been","busy","lately","am","was"], difficulty:"beginner"},
+    {jp:"ありがとうございます", correctEn:"Thank you very much", choices:["Thank","you","very","much","so","a"], difficulty:"beginner"},
+    {jp:"彼女は毎日散歩に連れて行ってくれます", correctEn:"His girlfriend takes him for walks every day", choices:["His","girlfriend","takes","him","for","walks","every","day","take","a","the"], difficulty:"intermediate"},
+    {jp:"膝のせいで今は歩けません", correctEn:"I can not walk right now because of my knee", choices:["I","can","not","walk","right","now","because","of","my","knee","for","the"], difficulty:"intermediate"},
+    {jp:"手術は2週間前でした", correctEn:"The operation was two weeks ago", choices:["The","operation","was","two","weeks","ago","is","a","before"], difficulty:"intermediate"},
+    {jp:"長いリハビリ計画があります", correctEn:"I have a very long rehabilitation plan", choices:["I","have","a","very","long","rehabilitation","plan","the","plans"], difficulty:"intermediate"},
+    {jp:"少し痛みがありますが大丈夫です", correctEn:"I have a little pain but I am okay", choices:["I","have","a","little","pain","but","am","okay","some","very"], difficulty:"intermediate"},
+    {jp:"彼が長時間走っている時は座っています", correctEn:"I sit down when he runs for a long time", choices:["I","sit","down","when","he","runs","for","a","long","time","sitting","very"], difficulty:"intermediate"},
+    {jp:"彼はよくしつけられています", correctEn:"He is well trained", choices:["He","is","well","trained","very","good","a"], difficulty:"intermediate"},
+    {jp:"約4ヶ月前に一緒に暮らし始めました", correctEn:"I started living with him about four months ago", choices:["I","started","living","with","him","about","four","months","ago","start","before","the"], difficulty:"intermediate"},
+    {jp:"彼がそれについてどう思っているかわかりません", correctEn:"I do not know what he thinks about that", choices:["I","do","not","know","what","he","thinks","about","that","think","of","it"], difficulty:"intermediate"},
+    {jp:"彼は私を愛していると思います", correctEn:"I think he loves me", choices:["I","think","he","loves","me","love","is","that"], difficulty:"intermediate"},
+    {jp:"休みの日に犬と遊ぶのが好きです", correctEn:"I like playing with my dog on my free days", choices:["I","like","playing","with","my","dog","on","my","free","days","play","in","at","the"], difficulty:"intermediate"},
+    {jp:"会社のクラブでラグビーをしていた時に怪我をしました", correctEn:"I got injured when I was playing rugby in my company club", choices:["I","got","injured","when","was","playing","rugby","in","my","company","club","get","at","the"], difficulty:"intermediate"},
+    {jp:"より強くなって戻るのが待ちきれません", correctEn:"I can not wait to come back stronger", choices:["I","can","not","wait","to","come","back","stronger","more","very","strong"], difficulty:"intermediate"},
+    {jp:"いつ頃復帰予定ですか", correctEn:"When are you planning to come back", choices:["When","are","you","planning","to","come","back","plan","is","will"], difficulty:"intermediate"},
+    {jp:"彼は家で休んでいる間良い相棒です", correctEn:"He is good company while I am resting at home", choices:["He","is","good","company","while","I","am","resting","at","home","a","the","rest"], difficulty:"intermediate"},
+    {jp:"何か食べに行きませんか", correctEn:"Do you want to grab some food", choices:["Do","you","want","to","grab","some","food","get","a","the"], difficulty:"intermediate"},
+    {jp:"あの新しい店を試してみましょう", correctEn:"Let us try that new place", choices:["Let","us","try","that","new","place","the","a","shop"], difficulty:"intermediate"},
+    {jp:"今夜ピザはどうですか", correctEn:"How about pizza tonight", choices:["How","about","pizza","tonight","is","a","the"], difficulty:"intermediate"},
+    {jp:"割り勘にしましょう", correctEn:"Let us split the bill", choices:["Let","us","split","the","bill","a","check"], difficulty:"intermediate"},
+    {jp:"今日は私のおごりです", correctEn:"This is on me today", choices:["This","is","on","me","today","for","my"], difficulty:"intermediate"},
+    {jp:"もう一回言ってもらえますか", correctEn:"Can you say that again", choices:["Can","you","say","that","again","it","please"], difficulty:"intermediate"},
+    {jp:"それはどういう意味ですか", correctEn:"What does that mean", choices:["What","does","that","mean","do","is","it"], difficulty:"intermediate"},
+    {jp:"これは何と言いますか", correctEn:"How do you say this", choices:["How","do","you","say","this","that","it"], difficulty:"intermediate"},
+    {jp:"まだ英語を勉強中です", correctEn:"I am still learning English", choices:["I","am","still","learning","English","learn","study"], difficulty:"intermediate"},
+    {jp:"ゆっくり話してもらえますか", correctEn:"Can you speak slowly", choices:["Can","you","speak","slowly","talk","more","please"], difficulty:"intermediate"},
+    {jp:"最善を尽くしています", correctEn:"I am trying my best", choices:["I","am","trying","my","best","do","very"], difficulty:"intermediate"},
+    {jp:"それは私にとって新しい単語です", correctEn:"That is a new word for me", choices:["That","is","a","new","word","for","me","the","to"], difficulty:"intermediate"},
+    {jp:"今とてもお腹が空いています", correctEn:"I am starving right now", choices:["I","am","starving","right","now","very","hungry"], difficulty:"intermediate"},
+    {jp:"何が食べたい気分ですか", correctEn:"What are you craving", choices:["What","are","you","craving","want","do","like"], difficulty:"intermediate"},
+    {jp:"あの店は本当に美味しいです", correctEn:"That place is really good", choices:["That","place","is","really","good","very","a","the"], difficulty:"intermediate"},
+    {jp:"ごちそうさまでした", correctEn:"Thanks for treating me", choices:["Thanks","for","treating","me","thank","you","to"], difficulty:"intermediate"},
+    {jp:"私は朝が弱い人間です", correctEn:"I am not a morning person", choices:["I","am","not","a","morning","person","the","good"], difficulty:"intermediate"},
+    {jp:"それはとても突然ですね", correctEn:"That is so random", choices:["That","is","so","random","very","suddenly","a"], difficulty:"intermediate"},
+    {jp:"本気で言っています", correctEn:"I am dead serious", choices:["I","am","dead","serious","very","really","so"], difficulty:"intermediate"},
+    {jp:"それは絶対に起こらなかったでしょう", correctEn:"No way that happened", choices:["No","way","that","happened","not","it","did"], difficulty:"intermediate"},
+    {jp:"それはとても面白いです", correctEn:"That is hilarious", choices:["That","is","hilarious","very","funny","so"], difficulty:"intermediate"},
+    {jp:"あなたは私の一日を最高にしてくれました", correctEn:"You made my day", choices:["You","made","my","day","make","the","a"], difficulty:"intermediate"},
+    {jp:"今日疲れているように見えます", correctEn:"You look tired today", choices:["You","look","tired","today","are","very","so"], difficulty:"intermediate"},
+    {jp:"よく眠れましたか", correctEn:"Did you sleep well", choices:["Did","you","sleep","well","do","good","very"], difficulty:"intermediate"},
+    {jp:"夜更かしをしてしまいました", correctEn:"I stayed up late", choices:["I","stayed","up","late","stay","very","so"], difficulty:"intermediate"},
+    {jp:"休憩を取りましょう", correctEn:"Let us take a break", choices:["Let","us","take","a","break","get","some"], difficulty:"intermediate"},
+    {jp:"ストレッチする必要があります", correctEn:"I need to stretch", choices:["I","need","to","stretch","must","should","do"], difficulty:"intermediate"},
+    {jp:"今日の予定は何ですか", correctEn:"What is your plan today", choices:["What","is","your","plan","today","are","for"], difficulty:"intermediate"},
+    {jp:"一日中暇です", correctEn:"I am free all day", choices:["I","am","free","all","day","the","whole"], difficulty:"intermediate"},
+    {jp:"何か楽しいことをしましょう", correctEn:"Let us do something fun", choices:["Let","us","do","something","fun","some","a"], difficulty:"intermediate"},
+    {jp:"それに賛成です", correctEn:"I am down for that", choices:["I","am","down","for","that","it","okay"], difficulty:"intermediate"},
+    {jp:"私も参加させてください", correctEn:"Count me in", choices:["Count","me","in","too","also","please"], difficulty:"intermediate"},
+    {jp:"家に着いたらメッセージください", correctEn:"Text me when you are home", choices:["Text","me","when","you","are","home","get","at"], difficulty:"intermediate"},
+    {jp:"いいですねそうしましょう", correctEn:"Sounds like a plan", choices:["Sounds","like","a","plan","good","idea","the"], difficulty:"intermediate"},
+    {jp:"少し遅れています", correctEn:"I am running a bit late", choices:["I","am","running","a","bit","late","little","some"], difficulty:"advanced"},
   ],
   
+
+
   currentDataType: 'word',
   currentGroupNumber: null,
   weights: {},
   weightsPhrase: {},
+  weightsRearrange: {},
   streaks: {},
   streaksPhrase: {},
+  streaksRearrange: {},
   stats: {},
   history: [],
   newWords: new Set(),
@@ -1128,11 +1235,15 @@ const app = {
   currentIndex: 0,
   sessionScore: 0,
   waitingForNext: false,
+  rearrangeAnswer: [],
+  rearrangeMode: null,
   
   KEY_WEIGHTS: "vocab_weights_v1",
   KEY_WEIGHTS_PHRASE: "vocab_weights_phrase_v1",
+  KEY_WEIGHTS_REARRANGE: "vocab_weights_rearrange_v1",
   KEY_STREAKS: "vocab_streaks_v1",
   KEY_STREAKS_PHRASE: "vocab_streaks_phrase_v1",
+  KEY_STREAKS_REARRANGE: "vocab_streaks_rearrange_v1",
   KEY_STATS: "vocab_stats_v1",
   KEY_HISTORY: "vocab_history_v1",
   KEY_NEW_WORDS: "vocab_new_words_v1",
@@ -1145,6 +1256,7 @@ const app = {
       startScreen: document.getElementById("startScreen"),
       wordMenu: document.getElementById("wordMenu"),
       phraseMenu: document.getElementById("phraseMenu"),
+      rearrangeMenu: document.getElementById("rearrangeMenu"),
       gameScreen: document.getElementById("gameScreen"),
       statsScreen: document.getElementById("statsScreen"),
       weakScreen: document.getElementById("weakScreen"),
@@ -1183,8 +1295,10 @@ const app = {
   loadStorage() {
     this.weights = this.loadJSON(this.KEY_WEIGHTS, {});
     this.weightsPhrase = this.loadJSON(this.KEY_WEIGHTS_PHRASE, {});
+    this.weightsRearrange = this.loadJSON(this.KEY_WEIGHTS_REARRANGE, {});
     this.streaks = this.loadJSON(this.KEY_STREAKS, {});
     this.streaksPhrase = this.loadJSON(this.KEY_STREAKS_PHRASE, {});
+    this.streaksRearrange = this.loadJSON(this.KEY_STREAKS_REARRANGE, {});
     this.stats = this.loadJSON(this.KEY_STATS, {});
     this.history = this.loadJSON(this.KEY_HISTORY, []);
     const savedNewWords = this.loadJSON(this.KEY_NEW_WORDS, []);
@@ -1198,6 +1312,10 @@ const app = {
     this.phrases.forEach(p => {
       if (this.weightsPhrase[p.en] === undefined) this.weightsPhrase[p.en] = 0;
       if (this.streaksPhrase[p.en] === undefined) this.streaksPhrase[p.en] = 0;
+    });
+    this.rearrangeProblems.forEach(p => {
+      if (this.weightsRearrange[p.jp] === undefined) this.weightsRearrange[p.jp] = 0;
+      if (this.streaksRearrange[p.jp] === undefined) this.streaksRearrange[p.jp] = 0;
     });
   },
   
@@ -1221,9 +1339,12 @@ const app = {
     if (this.currentDataType === 'word') {
       this.els.wordCount.textContent = this.words.length;
       this.els.itemTypeLabel.textContent = "語彙";
-    } else {
+    } else if (this.currentDataType === 'phrase') {
       this.els.wordCount.textContent = this.phrases.length;
       this.els.itemTypeLabel.textContent = "短文";
+    } else if (this.currentDataType === 'rearrange') {
+      this.els.wordCount.textContent = this.rearrangeProblems.length;
+      this.els.itemTypeLabel.textContent = "並び替え";
     }
   },
   
@@ -1235,10 +1356,17 @@ const app = {
       tabs[0].classList.add('active');
       this.els.wordMenu.classList.remove('hidden');
       this.els.phraseMenu.classList.add('hidden');
-    } else {
+      this.els.rearrangeMenu.classList.add('hidden');
+    } else if (type === 'phrase') {
       tabs[1].classList.add('active');
       this.els.wordMenu.classList.add('hidden');
       this.els.phraseMenu.classList.remove('hidden');
+      this.els.rearrangeMenu.classList.add('hidden');
+    } else if (type === 'rearrange') {
+      tabs[2].classList.add('active');
+      this.els.wordMenu.classList.add('hidden');
+      this.els.phraseMenu.classList.add('hidden');
+      this.els.rearrangeMenu.classList.remove('hidden');
     }
   },
   
@@ -1449,14 +1577,14 @@ const app = {
   },
   
   begin(mode, n, dataType) {
-    const showAllStart = this.els.showAllJPStart.checked;
-    this.els.showAllJP.checked = showAllStart;
+    this.els.showAllJP.checked = true;
     this.buildQuiz(mode, n, dataType);
     this.els.startScreen.classList.add("hidden");
     this.els.statsScreen.classList.add("hidden");
     this.els.weakScreen.classList.add("hidden");
     this.els.wordListScreen.classList.add("hidden");
     this.els.gameScreen.classList.remove("hidden");
+    document.querySelector('.mode-tabs').style.display = 'none';
     const modeNames = {
       normal: "通常",
       weak10: "苦手集中",
@@ -1476,6 +1604,7 @@ const app = {
     this.els.statsScreen.classList.add("hidden");
     this.els.weakScreen.classList.add("hidden");
     this.els.wordListScreen.classList.add("hidden");
+    document.querySelector('.mode-tabs').style.display = 'flex';
     this.saveAllData();
   },
   
@@ -1495,6 +1624,24 @@ const app = {
     this.els.questionBox.innerHTML = showAll && Array.isArray(w.jp) ? w.jp.join(" / ") : (Array.isArray(w.jp) ? w.jp[0] : w.jp);
     this.els.answerInput.value = "";
     this.els.answerInput.disabled = false;
+    this.els.answerInput.style.display = '';
+    document.getElementById('checkBtn').style.display = '';
+    document.getElementById('skipBtn').style.display = '';
+    document.querySelector('.input-example').style.display = '';
+    document.getElementById('hintText').style.display = '';
+    
+    const inputExample = document.querySelector('.input-example');
+    if (this.currentDataType === 'phrase') {
+      inputExample.innerHTML = '答え方の例：<strong>How are you doing</strong>（英単語）／ <strong>ハウアーユドゥーイン</strong>（カタカナ）';
+    } else {
+      inputExample.innerHTML = '答え方の例：<strong>apple</strong>（英単語）／ <strong>アップル</strong>（カタカナ）';
+    }
+    const choicesArea = document.getElementById('choicesArea');
+    const answerArea = document.getElementById('answerArea');
+    const rearrangeControls = document.getElementById('rearrangeControls');
+    if (choicesArea) choicesArea.remove();
+    if (answerArea) answerArea.remove();
+    if (rearrangeControls) rearrangeControls.remove();
     this.els.feedbackArea.innerHTML = "";
     this.els.nextPrompt.innerHTML = "";
     this.els.nextPrompt.classList.add("hidden");
@@ -1583,7 +1730,11 @@ if (isKat) {
   proceedToNext() {
     this.currentIndex++;
     if (this.currentIndex < this.quizTotal) {
-      this.showCurrent();
+      if (this.currentDataType === 'rearrange') {
+        this.showCurrentRearrange();
+      } else {
+        this.showCurrent();
+      }
     } else {
       this.finishSession();
     }
@@ -1633,15 +1784,21 @@ if (isKat) {
       const mark = pts >= 2 ? "✅" : pts === 1 ? "⭕" : "❌";
       const jpText = Array.isArray(w.jp) ? w.jp.join(" / ") : w.jp;
       
+      const isRearrange = this.currentDataType === 'rearrange';
+      const displayText = isRearrange ? w.jp : w.en;
+      const soundButton = isRearrange ? '' : `<button onclick="app.playSound('${w.en}')" style="margin-left:8px;border:none;background:none;cursor:pointer;font-size:18px">🔊</button>`;
+      const kanaLine = isRearrange ? '' : `<div style="font-size:13px;color:var(--muted)">${w.ka} / ${w.kaSimple}</div>`;
+      const jpLine = isRearrange ? `<div style="font-size:13px;color:var(--muted)">正解: ${w.correctEn}</div>` : `<div style="font-size:13px;color:var(--muted)">${jpText}</div>`;
+      
       resultHTML += `
         <div style="padding:12px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center">
           <div style="flex:1">
             <div style="font-weight:700;margin-bottom:4px">
-              ${mark} ${w.en}
-              <button onclick="app.playSound('${w.en}')" style="margin-left:8px;border:none;background:none;cursor:pointer;font-size:18px">🔊</button>
+              ${mark} ${displayText}
+              ${soundButton}
             </div>
-            <div style="font-size:13px;color:var(--muted)">${w.ka} / ${w.kaSimple}</div>
-            <div style="font-size:13px;color:var(--muted)">${jpText}</div>
+            ${kanaLine}
+            ${jpLine}
             <div style="font-size:12px;margin-top:4px;color:${pts >= 1 ? 'var(--success)' : 'var(--error)'}">
               あなたの回答: ${userAnswer}
             </div>
@@ -1717,11 +1874,14 @@ if (isKat) {
     this.saveJSON(streakKey, streaks);
   },
   
+  
   saveAllData() {
     this.saveJSON(this.KEY_WEIGHTS, this.weights);
     this.saveJSON(this.KEY_WEIGHTS_PHRASE, this.weightsPhrase);
+    this.saveJSON(this.KEY_WEIGHTS_REARRANGE, this.weightsRearrange);
     this.saveJSON(this.KEY_STREAKS, this.streaks);
     this.saveJSON(this.KEY_STREAKS_PHRASE, this.streaksPhrase);
+    this.saveJSON(this.KEY_STREAKS_REARRANGE, this.streaksRearrange);
     this.saveJSON(this.KEY_STATS, this.stats);
     this.saveJSON(this.KEY_HISTORY, this.history);
     this.saveJSON(this.KEY_NEW_WORDS, Array.from(this.newWords));
@@ -1831,9 +1991,16 @@ if (isKat) {
     this.els.gameScreen.classList.add("hidden");
     this.els.statsScreen.classList.add("hidden");
     this.els.weakScreen.classList.add("hidden");
-    const typeLabel = this.currentDataType === 'word' ? '単語' : '短文';
+    let typeLabel = '単語';
+    let items = this.words;
+    if (this.currentDataType === 'phrase') {
+      typeLabel = '短文';
+      items = this.phrases;
+    } else if (this.currentDataType === 'rearrange') {
+      typeLabel = '並び替え';
+      items = this.rearrangeProblems;
+    }
     this.els.listTitle.textContent = `📚 登録${typeLabel}一覧`;
-    const items = this.currentDataType === 'word' ? this.words : this.phrases;
     this.els.totalWordCount.textContent = items.length;
     this.els.wordSearchInput.value = "";
     this.renderWordList(items);
@@ -1846,24 +2013,40 @@ if (isKat) {
   
   renderWordList(itemList) {
     this.els.wordListContainer.innerHTML = "";
-    const newSet = this.currentDataType === 'word' ? this.newWords : this.newPhrases;
-    const weights = this.currentDataType === 'word' ? this.weights : this.weightsPhrase;
     itemList.forEach(w => {
       const div = document.createElement("div");
       div.className = "word-list-item";
-      const isNew = newSet.has(w.en);
-      const newBadge = isNew ? '<span class="badge-new">NEW</span>' : '';
-      const jpText = Array.isArray(w.jp) ? w.jp.join(" / ") : w.jp;
-      div.innerHTML = `
-        <div>
-          <div class="word-en">${w.en} ${newBadge}</div>
-          <div class="word-ka">${w.ka} / ${w.kaSimple}</div>
-          <div class="word-jp">${jpText}</div>
-        </div>
-        <div style="text-align:right;color:var(--muted);font-size:12px">
-          苦手度: ${weights[w.en] || 0}
-        </div>
-      `;
+      
+      if (this.currentDataType === 'rearrange') {
+        const weight = this.weightsRearrange[w.jp] || 0;
+        div.innerHTML = `
+          <div>
+            <div class="word-en">${w.jp}</div>
+            <div class="word-ka">正解: ${w.correctEn}</div>
+            <div class="word-jp">難易度: ${w.difficulty}</div>
+          </div>
+          <div style="text-align:right;color:var(--muted);font-size:12px">
+            苦手度: ${weight}
+          </div>
+        `;
+      } else {
+        const newSet = this.currentDataType === 'word' ? this.newWords : this.newPhrases;
+        const weights = this.currentDataType === 'word' ? this.weights : this.weightsPhrase;
+        const isNew = newSet.has(w.en);
+        const newBadge = isNew ? '<span class="badge-new">NEW</span>' : '';
+        const jpText = Array.isArray(w.jp) ? w.jp.join(" / ") : w.jp;
+        div.innerHTML = `
+          <div>
+            <div class="word-en">${w.en} ${newBadge}</div>
+            <div class="word-ka">${w.ka} / ${w.kaSimple}</div>
+            <div class="word-jp">${jpText}</div>
+          </div>
+          <div style="text-align:right;color:var(--muted);font-size:12px">
+            苦手度: ${weights[w.en] || 0}
+          </div>
+        `;
+      }
+      
       this.els.wordListContainer.appendChild(div);
     });
   },
@@ -1880,9 +2063,237 @@ if (isKat) {
       return w.en.toLowerCase().includes(q) || w.ka.includes(query) || jpMatch;
     });
     this.renderWordList(filtered);
-  }
+  },
+// 並び替えモード用の関数
+  beginRearrange(mode, n, difficulty) {
+    this.rearrangeMode = mode;
+    this.currentDataType = 'rearrange';
+    
+    let list = [];
+    if (difficulty === 'all') {
+      list = [...this.rearrangeProblems];
+    } else {
+      list = this.rearrangeProblems.filter(p => p.difficulty === difficulty);
+    }
+    
+    if (mode === "weak10") {
+      const sorted = [...list].sort((a, b) => 
+        (this.weightsRearrange[b.jp] || 0) - (this.weightsRearrange[a.jp] || 0)
+      );
+      let pool = sorted.filter(p => (this.weightsRearrange[p.jp] || 0) > 0).slice(0, n);
+      if (pool.length < n) {
+        const remain = list.filter(x => !pool.includes(x))
+          .sort(() => Math.random() - 0.5);
+        pool = pool.concat(remain.slice(0, n - pool.length));
+      }
+      list = pool;
+    } else {
+      list = list.sort(() => Math.random() - 0.5).slice(0, n);
+    }
+    
+    this.quizList = list;
+    this.quizTotal = this.quizList.length;
+    this.currentIndex = 0;
+    this.sessionScore = 0;
+    this.waitingForNext = false;
+    this.rearrangeAnswer = [];
+    
+    this.els.startScreen.classList.add("hidden");
+    this.els.gameScreen.classList.remove("hidden");
+    document.querySelector('.mode-tabs').style.display = 'none';
+    
+    const modeNames = { normal: "通常", weak10: "苦手集中" };
+    const diffNames = { beginner: "初級", intermediate: "中級", advanced: "上級", all: "全レベル" };
+    this.els.modeChip.textContent = `並び替え ${diffNames[difficulty]} ${modeNames[mode]} ${n}問`;
+    
+    this.updateProgressUI();
+    this.updateWordCount();
+    this.showCurrentRearrange();
+  },
+  
+  showCurrentRearrange() {
+    if (this.currentIndex >= this.quizTotal) {
+      this.finishSession();
+      return;
+    }
+    
+    const problem = this.quizList[this.currentIndex];
+    this.els.questionBox.innerHTML = problem.jp;
+    this.rearrangeAnswer = [];
+    
+    this.els.answerInput.style.display = 'none';
+    document.getElementById('checkBtn').style.display = 'none';
+    document.getElementById('skipBtn').style.display = 'none';
+    document.querySelector('.input-example').style.display = 'none';
+    document.getElementById('hintText').style.display = 'none';
+    
+    let choicesArea = document.getElementById('choicesArea');
+    let answerArea = document.getElementById('answerArea');
+    let rearrangeControls = document.getElementById('rearrangeControls');
+    
+    if (!choicesArea) {
+      choicesArea = document.createElement('div');
+      choicesArea.id = 'choicesArea';
+      choicesArea.style.cssText = 'display:grid;grid-template-columns:repeat(auto-fit,minmax(80px,1fr));gap:8px;margin:16px 0';
+      this.els.answerInput.parentNode.insertBefore(choicesArea, this.els.answerInput);
+    }
+    
+    if (!answerArea) {
+      answerArea = document.createElement('div');
+      answerArea.id = 'answerArea';
+      answerArea.style.cssText = 'min-height:60px;padding:12px;background:#f8fafc;border-radius:10px;margin:12px 0;display:flex;flex-wrap:wrap;gap:6px;align-items:center';
+      this.els.answerInput.parentNode.insertBefore(answerArea, this.els.answerInput);
+    }
+    
+    if (!rearrangeControls) {
+      rearrangeControls = document.createElement('div');
+      rearrangeControls.id = 'rearrangeControls';
+      rearrangeControls.style.cssText = 'display:flex;gap:8px;margin-top:12px';
+      rearrangeControls.innerHTML = `
+        <button class="btn btn-ghost" onclick="app.undoRearrange()">⬅️ 戻る</button>
+        <button class="btn btn-ghost" onclick="app.resetRearrange()">🔄 リセット</button>
+        <button class="btn btn-primary" onclick="app.checkRearrange()">✅ 答え合わせ</button>
+      `;
+      answerArea.parentNode.insertBefore(rearrangeControls, answerArea.nextSibling);
+    }
+    
+    choicesArea.innerHTML = '';
+    problem.choices.forEach(word => {
+      const btn = document.createElement('button');
+      btn.textContent = word;
+      btn.className = 'btn btn-ghost';
+      btn.style.cssText = 'padding:10px;font-size:16px';
+      btn.onclick = () => this.addWordToAnswer(word);
+      choicesArea.appendChild(btn);
+    });
+    
+    answerArea.innerHTML = '<div style="color:#64748b;font-size:14px">単語をタップして回答欄に追加してください</div>';
+    
+    this.els.feedbackArea.innerHTML = "";
+    this.els.nextPrompt.classList.add("hidden");
+    this.waitingForNext = false;
+    this.updateProgressUI();
+  },
+  
+  addWordToAnswer(word) {
+    this.rearrangeAnswer.push(word);
+    const answerArea = document.getElementById('answerArea');
+    answerArea.innerHTML = '';
+    this.rearrangeAnswer.forEach(w => {
+      const span = document.createElement('span');
+      span.textContent = w;
+      span.style.cssText = 'background:#3b82f6;color:white;padding:8px 12px;border-radius:6px;font-weight:600';
+      answerArea.appendChild(span);
+    });
+  },
+  
+  undoRearrange() {
+    if (this.rearrangeAnswer.length > 0) {
+      this.rearrangeAnswer.pop();
+      const answerArea = document.getElementById('answerArea');
+      answerArea.innerHTML = '';
+      if (this.rearrangeAnswer.length === 0) {
+        answerArea.innerHTML = '<div style="color:#64748b;font-size:14px">単語をタップして回答欄に追加してください</div>';
+      } else {
+        this.rearrangeAnswer.forEach(w => {
+          const span = document.createElement('span');
+          span.textContent = w;
+          span.style.cssText = 'background:#3b82f6;color:white;padding:8px 12px;border-radius:6px;font-weight:600';
+          answerArea.appendChild(span);
+        });
+      }
+    }
+  },
+  
+  resetRearrange() {
+    this.rearrangeAnswer = [];
+    const answerArea = document.getElementById('answerArea');
+    answerArea.innerHTML = '<div style="color:#64748b;font-size:14px">単語をタップして回答欄に追加してください</div>';
+  },
+  
+  checkRearrange() {
+    if (this.waitingForNext) return;
+    if (this.rearrangeAnswer.length === 0) return;
+    
+    const problem = this.quizList[this.currentIndex];
+    const userAnswer = this.rearrangeAnswer.join(' ');
+    const correctAnswer = problem.correctEn;
+    
+    let pts = 0;
+    let fbClass = "ng";
+    let fbText = "";
+    
+    if (userAnswer === correctAnswer) {
+      pts = 2;
+      fbClass = "ok";
+      fbText = `✅ 完全一致！2点`;
+    } else {
+      const userWords = userAnswer.split(' ');
+      const correctWords = correctAnswer.split(' ');
+      let wrongCount = 0;
+      
+      if (userWords.length === correctWords.length) {
+        for (let i = 0; i < userWords.length; i++) {
+          if (userWords[i] !== correctWords[i]) wrongCount++;
+        }
+      } else {
+        wrongCount = Math.abs(userWords.length - correctWords.length) + 1;
+      }
+      
+      if (wrongCount <= 1) {
+        pts = 1;
+        fbClass = "half";
+        fbText = `⭕ 惜しい！1点（${wrongCount}箇所違い）`;
+      } else {
+        pts = 0;
+        fbClass = "ng";
+        fbText = `❌ 不正解（${wrongCount}箇所違い）`;
+      }
+    }
+    
+    this.recordStat(pts >= 1);
+    this.adjustWeightOnResultRearrange(problem.jp, pts);
+    this.pushHistory({
+      t: new Date().toISOString(),
+      jp: problem.jp,
+      en: correctAnswer,
+      input: userAnswer,
+      pts,
+      type: 'rearrange'
+    });
+    this.sessionScore += pts;
+    
+    const box = document.createElement("div");
+    box.className = `feedback ${fbClass}`;
+    box.innerHTML = `
+      <div style="font-weight:800">${fbText}</div>
+      <div style="margin-top:8px">正解: <strong>${correctAnswer}</strong></div>
+      <div style="margin-top:6px" class="muted">あなたの回答: ${userAnswer}</div>
+      <div style="margin-top:6px" class="muted">苦手度: ${this.weightsRearrange[problem.jp]}</div>
+    `;
+    this.els.feedbackArea.innerHTML = "";
+    this.els.feedbackArea.appendChild(box);
+    this.els.nextPrompt.innerHTML = "⏎ Enter キーで次の問題へ";
+    this.els.nextPrompt.classList.remove("hidden");
+    this.waitingForNext = true;
+  },
+  
+  adjustWeightOnResultRearrange(jp, pts) {
+    if (pts >= 1) {
+      this.weightsRearrange[jp] = Math.max(0, (this.weightsRearrange[jp] || 0) - 1);
+      this.streaksRearrange[jp] = (this.streaksRearrange[jp] || 0) + 1;
+      if (this.streaksRearrange[jp] >= 3) {
+        this.weightsRearrange[jp] = 0;
+        this.streaksRearrange[jp] = 0;
+      }
+    } else {
+      this.weightsRearrange[jp] = Math.min(5, (this.weightsRearrange[jp] || 0) + 1);
+      this.streaksRearrange[jp] = 0;
+    }
+    this.saveJSON(this.KEY_WEIGHTS_REARRANGE, this.weightsRearrange);
+    this.saveJSON(this.KEY_STREAKS_REARRANGE, this.streaksRearrange);
+  },
 };
-
 document.addEventListener("DOMContentLoaded", () => {
   app.init();
-}); 
+});

@@ -70,24 +70,22 @@
     <div class="card">
       <header class="app-header">
         <h1>English PROGRESS</h1>
-        <p class="sub">日本語訳を見て、英語のスペルかカタカナで答えよう。苦手は自動で優先学習。</p>
       </header>
 
       <!-- MODE TABS -->
       <div class="mode-tabs">
-        <button class="mode-tab active" onclick="app.switchMode('word')">📖 単語モード</button>
-        <button class="mode-tab phrase-mode" onclick="app.switchMode('phrase')">💬 短文モード</button>
+        <button class="mode-tab active" onclick="app.switchMode('word')">📖 単語</button>
+        <button class="mode-tab phrase-mode" onclick="app.switchMode('phrase')">💬 頻出フレーズ</button>
+        <button class="mode-tab" onclick="app.switchMode('rearrange')">🔀 並び替え演習</button>
       </div>
 
       <!-- START MENU -->
       <div id="startScreen" class="">
         <!-- Word Mode Menu -->
         <div id="wordMenu" class="">
-          <div class="small">単語：学習方法を選んでスタート</div>
           <div class="start-list">
             <button class="btn btn-primary" onclick="app.begin('normal',10,'word')">全単語から 10問</button>
             <button class="btn btn-ghost" onclick="app.begin('weak10',10,'word')">苦手集中 10問</button>
-            <button class="btn btn-ghost" onclick="app.begin('new',10,'word')">🆕 新規単語優先 10問</button>
           </div>
 
           <div style="margin-top:20px">
@@ -109,16 +107,18 @@
 
         <!-- Phrase Mode Menu -->
         <div id="phraseMenu" class="hidden">
-          <div class="small">短文：学習方法を選んでスタート</div>
           <div class="start-list">
-            <button class="btn btn-phrase" onclick="app.begin('normal',10,'phrase')">全短文から 10問</button>
-            <button class="btn btn-ghost" onclick="app.begin('weak10',10,'phrase')">苦手集中 10問</button>
-            <button class="btn btn-ghost" onclick="app.begin('new',10,'phrase')">🆕 新規短文優先 10問</button>
+            <button class="btn btn-phrase" onclick="app.begin('normal',5,'phrase')">全短文から 5問</button>
+            <button class="btn btn-ghost" onclick="app.begin('weak10',5,'phrase')">苦手集中 5問</button>
           </div>
         </div>
-
-        <div style="margin-top:14px" class="small">
-          <label><input type="checkbox" id="showAllJPStart" checked> スタート時に日本語訳のフル表示を許可</label>
+        <!-- Rearrange Mode Menu -->
+        <div id="rearrangeMenu" class="hidden">
+          <div class="start-list">
+            <button class="btn btn-primary" onclick="app.beginRearrange('normal',5,'beginner')">初級 5問</button>
+            <button class="btn btn-ghost" onclick="app.beginRearrange('normal',5,'intermediate')">中級 5問</button>
+            <button class="btn btn-ghost" onclick="app.beginRearrange('normal',5,'all')">全体 5問</button>
+          </div>
         </div>
 
         <div style="margin-top:10px" class="small">
@@ -166,7 +166,7 @@
         <div class="bottom-area">
           <div class="row">
             <div class="chip" id="modeChip">Mode</div>
-            <div class="muted" id="hintText">※ カタカナOK（2文字差まで許容）</div>
+            <div class="muted" id="hintText">※ 完全一致で2点、カタカナ2文字差以内で1点</div>
           </div>
           <div class="row">
             <div class="small">表示: <label><input type="checkbox" id="showAllJP" checked> 日本語訳を全部表示</label></div>
