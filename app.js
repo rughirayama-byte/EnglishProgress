@@ -1011,212 +1011,239 @@ const app = {
 
   // 短文データ（100個）
   phrases: [
-    {en:"Hey!", ka:"ヘイ", jp:"やあ！"},
-    {en:"What's up?", ka:"ワッサップ", jp:"元気？"},
-    {en:"How's it going?", ka:"ハウズィゴーイン", jp:"調子どう？"},
-    {en:"Good morning!", ka:"グッモーニン", jp:"おはよ！"},
-    {en:"Good to see you!", ka:"グットゥシーユ", jp:"会えて嬉しい！"},
-    {en:"Long time no see!", ka:"ロンタイムノーシー", jp:"久しぶり！"},
-    {en:"How've you been?", ka:"ハウヴユビン", jp:"元気にしてた？"},
-    {en:"I missed you, man.", ka:"アイミストゥユ、マン", jp:"会えなくて寂しかったよ。"},
-    {en:"You look great today!", ka:"ユルックグレイトゥデイ", jp:"今日元気そうじゃん！"},
-    {en:"Nice seeing you here!", ka:"ナイスシーインユヒア", jp:"ここで会うなんて！"},
-    {en:"I'm doing good.", ka:"アイムドゥーイングッ", jp:"元気だよ。"},
-    {en:"I'm kinda tired.", ka:"アイムカインダタイアード", jp:"ちょっと疲れてる。"},
-    {en:"Not bad at all.", ka:"ナッバッダロール", jp:"悪くないよ。"},
-    {en:"Same as always.", ka:"セイマズオールウェイズ", jp:"いつも通り！"},
-    {en:"I've been busy lately.", ka:"アイヴビンビジーレイトリ", jp:"最近忙しかった。"},
-    {en:"I slept super well.", ka:"アイスレプスーパーウェル", jp:"めっちゃよく寝た。"},
-    {en:"My body feels good.", ka:"マイバディフィールズグッ", jp:"体調いいよ。"},
-    {en:"I feel amazing today.", ka:"アイフィーラメイズィントゥデイ", jp:"今日は最高！"},
-    {en:"How's your body?", ka:"ハウズユアバディ", jp:"体の調子どう？"},
-    {en:"Any pain right now?", ka:"エニペインライナウ", jp:"今どっか痛い？"},
-    {en:"How's your family doing?", ka:"ハウズユアファミリードゥーイン", jp:"家族元気？"},
-    {en:"Kids doing okay?", ka:"キッズドゥーインオーケイ", jp:"子どもたちは？"},
-    {en:"My kid's crazy energetic.", ka:"マイキッズクレイジーエナジェティック", jp:"子ども元気すぎてやばい。"},
-    {en:"My parents are doing fine.", ka:"マイペアレンツアードゥーインファイン", jp:"親は元気だよ。"},
-    {en:"How's home life?", ka:"ハウズホームライフ", jp:"家の方はどう？"},
-    {en:"Nice weather today.", ka:"ナイスウェザートゥデイ", jp:"いい天気だね。"},
-    {en:"It's super hot.", ka:"イッツスーパーハッ", jp:"めっちゃ暑い。"},
-    {en:"It's freezing.", ka:"イッツフリージン", jp:"めっちゃ寒い。"},
-    {en:"I love this weather.", ka:"アイラヴディスウェザー", jp:"この天気好きだわ。"},
-    {en:"Perfect day, huh?", ka:"パーフェクデイ、ハ", jp:"最高の日だね。"},
-    {en:"How's work?", ka:"ハウズワーク", jp:"仕事どう？"},
-    {en:"Work's been crazy.", ka:"ワークスビンクレイジー", jp:"仕事がやばい。"},
-    {en:"I'm on break now.", ka:"アイモンブレイクナウ", jp:"休憩中。"},
-    {en:"School's alright.", ka:"スクールズオールライ", jp:"学校はまあまあ。"},
-    {en:"I've got a lot to do.", ka:"アイヴガッタロットゥドゥ", jp:"やること多いんだよね。"},
-    {en:"How's training going?", ka:"ハウズトレーニンゴーイン", jp:"練習どう？"},
-    {en:"Practice was good today.", ka:"プラクティスワズグットゥデイ", jp:"今日は練習よかった。"},
-    {en:"My knee feels better.", ka:"マイニーフィールズベター", jp:"膝の調子よくなってきた。"},
-    {en:"Still taking it slow.", ka:"スティルテイキニッスロウ", jp:"まだゆっくりね。"},
-    {en:"I think I can push a bit more.", ka:"アイシンカイキャンプッシャビッモア", jp:"もうちょい頑張れそう。"},
-    {en:"I'll be back soon.", ka:"アイルビーバックスーン", jp:"すぐ戻るよ。"},
-    {en:"Not this season, I guess.", ka:"ナッディスシーズン、アイゲス", jp:"今シーズンは無理かな。"},
-    {en:"Let's get stronger together.", ka:"レッツゲッストロンガートゥゲザー", jp:"一緒に強くなろう！"},
-    {en:"Good hustle today.", ka:"グッハッソトゥデイ", jp:"今日の動きよかったね。"},
-    {en:"I need more conditioning.", ka:"アイニードモアコンディショニン", jp:"もっと体作りしないと。"},
-    {en:"For real?", ka:"フォーリアル", jp:"まじ？"},
-    {en:"Seriously?", ka:"シリアスリ", jp:"ほんとに？"},
-    {en:"That's awesome!", ka:"ザッツオーサム", jp:"それ最高！"},
-    {en:"That sucks.", ka:"ザッサックス", jp:"それはつらいな。"},
-    {en:"Good for you!", ka:"グッフォーユ", jp:"よかったじゃん！"},
-    {en:"I feel you.", ka:"アイフィールユ", jp:"わかるよ。"},
-    {en:"Makes sense.", ka:"メイクスセンス", jp:"なるほどね。"},
-    {en:"No worries.", ka:"ノウワリーズ", jp:"気にしないで！"},
-    {en:"Take it easy.", ka:"テイキリージー", jp:"無理すんなよ。"},
-    {en:"I got you.", ka:"アイガッチュー", jp:"任せとけ。"},
-    {en:"You free today?", ka:"ユフリートゥデイ", jp:"今日暇？"},
-    {en:"Wanna hang out?", ka:"ワナハングアウ", jp:"遊ばない？"},
-    {en:"Let's chill somewhere.", ka:"レッツチルサムウェア", jp:"どっかでまったりしよ。"},
-    {en:"Wanna grab coffee?", ka:"ワナグラブコーフィ", jp:"コーヒー行かん？"},
-    {en:"Let's get lunch.", ka:"レッツゲッランチ", jp:"ランチ行こうよ。"},
-    {en:"Feel like going for a walk?", ka:"フィールライクゴーインフォーラウォーク", jp:"散歩する？"},
-    {en:"Let's hit the mall.", ka:"レッツヒッダモール", jp:"モール行く？"},
-    {en:"You wanna study together?", ka:"ユワナスタディトゥゲザー", jp:"一緒に勉強する？"},
-    {en:"Let's grab a drink later.", ka:"レッツグラバドリンクレイラー", jp:"あとで飲みに行かない？"},
-    {en:"I'm craving ramen.", ka:"アイムクレイヴィンラーメン", jp:"ラーメン食べたい。"},
-    {en:"Join me?", ka:"ジョインミ", jp:"一緒にどう？"},
-    {en:"I'm hungry.", ka:"アイムハングリ", jp:"お腹すいた。"},
-    {en:"I want something sweet.", ka:"アイウォンサムシンスウィー", jp:"甘いもの食べたい。"},
-    {en:"Let's order something.", ka:"レッツオーダーサムシン", jp:"なんか頼もう。"},
-    {en:"This place looks good.", ka:"ディスプレイスルックスグッ", jp:"ここ良さそうだね。"},
-    {en:"What do you recommend?", ka:"ワッドゥユレコメン", jp:"おすすめある？"},
-    {en:"This is so good!", ka:"ディスィズソーグッ", jp:"これめっちゃうまい！"},
-    {en:"Try this!", ka:"トライディス", jp:"これ食べてみて！"},
-    {en:"Wanna share?", ka:"ワナシェア", jp:"シェアする？"},
-    {en:"I'm full.", ka:"アイムフル", jp:"お腹いっぱい。"},
-    {en:"Let's get dessert.", ka:"レッツゲッデザー", jp:"デザートいこ！"},
-    {en:"No way!", ka:"ノウウェイ", jp:"うそでしょ！"},
-    {en:"You're kidding!", ka:"ユアキディン", jp:"冗談だろ！"},
-    {en:"Stop it.", ka:"スタッピッ", jp:"やめろよ。"},
-    {en:"I knew it!", ka:"アイニューイッ", jp:"やっぱり！"},
-    {en:"That's crazy.", ka:"ザッツクレイジー", jp:"それヤバい。"},
-    {en:"I love that.", ka:"アイラヴザッ", jp:"それ好きだわ。"},
-    {en:"Let's go!", ka:"レッツゴー", jp:"よっしゃ！"},
-    {en:"See ya!", ka:"シーヤ", jp:"じゃあね！"},
-    {en:"Catch you later.", ka:"キャッチュレイラー", jp:"またあとで！"},
-    {en:"Take care.", ka:"テイケア", jp:"気をつけてね。"},
-    {en:"Text me later.", ka:"テクスミーレイラー", jp:"あとで連絡して！"},
-    {en:"Let's hang out again soon.", ka:"レッツハングアウアゲンスーン", jp:"また近いうち遊ぼう！"},
-    {en:"How have you been?", ka:"ハウハヴユビン", jp:"元気だった？"},
-    {en:"I've been good!", ka:"アイヴビングッ", jp:"元気よ！"},
-    {en:"How about you?", ka:"ハウアバウチュー", jp:"そっちは？"},
-    {en:"I'm doing great!", ka:"アイムドゥーイングレイ", jp:"めっちゃ元気よ！"},
-    {en:"No issues so far!", ka:"ノウイシューズソーファー", jp:"特に問題なし！"},
-    {en:"Feeling really good these days.", ka:"フィーリンリアリグッディーズデイズ", jp:"かなり順調！"},
-    {en:"Glad to hear that!", ka:"グラットゥヒアザッ", jp:"良かった！"},
-    {en:"They're doing great!", ka:"ゼアドゥーイングレイ", jp:"元気だよ！"},
-    {en:"That's awesome though!", ka:"ザッツオーサムドウ", jp:"すごくいいことだね！"},
-    {en:"When are you planning to come back?", ka:"ウェンアーユプランニントゥカムバック", jp:"いつ頃復帰予定なの？"},
+    {en:"Hey!", ka:"ヘイ", jp:"やあ！", category:"greeting"},
+    {en:"What's up?", ka:"ワッサップ", jp:"元気？", category:"greeting"},
+    {en:"How's it going?", ka:"ハウズィゴーイン", jp:"調子どう？", category:"greeting"},
+    {en:"Good morning!", ka:"グッモーニン", jp:"おはよ！", category:"greeting"},
+    {en:"Good to see you!", ka:"グットゥシーユ", jp:"会えて嬉しい！", category:"greeting"},
+    {en:"Long time no see!", ka:"ロンタイムノーシー", jp:"久しぶり！", category:"greeting"},
+    {en:"How've you been?", ka:"ハウヴユビン", jp:"元気にしてた？", category:"greeting"},
+    {en:"I missed you, man.", ka:"アイミストゥユ、マン", jp:"会えなくて寂しかったよ。", category:"greeting"},
+    {en:"You look great today!", ka:"ユルックグレイトゥデイ", jp:"今日元気そうじゃん！", category:"greeting"},
+    {en:"Nice seeing you here!", ka:"ナイスシーインユヒア", jp:"ここで会うなんて！", category:"greeting"},
+    {en:"I'm doing good.", ka:"アイムドゥーイングッ", jp:"元気だよ。", category:"daily"},
+    {en:"I'm kinda tired.", ka:"アイムカインダタイアード", jp:"ちょっと疲れてる。", category:"daily"},
+    {en:"Not bad at all.", ka:"ナッバッダロール", jp:"悪くないよ。", category:"daily"},
+    {en:"Same as always.", ka:"セイマズオールウェイズ", jp:"いつも通り！", category:"daily"},
+    {en:"I've been busy lately.", ka:"アイヴビンビジーレイトリ", jp:"最近忙しかった。", category:"daily"},
+    {en:"I slept super well.", ka:"アイスレプスーパーウェル", jp:"めっちゃよく寝た。", category:"daily"},
+    {en:"My body feels good.", ka:"マイバディフィールズグッ", jp:"体調いいよ。", category:"daily"},
+    {en:"I feel amazing today.", ka:"アイフィーラメイズィントゥデイ", jp:"今日は最高！", category:"daily"},
+    {en:"How's your body?", ka:"ハウズユアバディ", jp:"体の調子どう？", category:"daily"},
+    {en:"Any pain right now?", ka:"エニペインライナウ", jp:"今どっか痛い？", category:"daily"},
+    {en:"How's your family doing?", ka:"ハウズユアファミリードゥーイン", jp:"家族元気？", category:"daily"},
+    {en:"Kids doing okay?", ka:"キッズドゥーインオーケイ", jp:"子どもたちは？", category:"daily"},
+    {en:"My kid's crazy energetic.", ka:"マイキッズクレイジーエナジェティック", jp:"子ども元気すぎてやばい。", category:"daily"},
+    {en:"My parents are doing fine.", ka:"マイペアレンツアードゥーインファイン", jp:"親は元気だよ。", category:"daily"},
+    {en:"How's home life?", ka:"ハウズホームライフ", jp:"家の方はどう？", category:"daily"},
+    {en:"Nice weather today.", ka:"ナイスウェザートゥデイ", jp:"いい天気だね。", category:"daily"},
+    {en:"It's super hot.", ka:"イッツスーパーハッ", jp:"めっちゃ暑い。", category:"daily"},
+    {en:"It's freezing.", ka:"イッツフリージン", jp:"めっちゃ寒い。", category:"daily"},
+    {en:"I love this weather.", ka:"アイラヴディスウェザー", jp:"この天気好きだわ。", category:"daily"},
+    {en:"Perfect day, huh?", ka:"パーフェクデイ、ハ", jp:"最高の日だね。", category:"daily"},
+    {en:"How's work?", ka:"ハウズワーク", jp:"仕事どう？", category:"daily"},
+    {en:"Work's been crazy.", ka:"ワークスビンクレイジー", jp:"仕事がやばい。", category:"daily"},
+    {en:"I'm on break now.", ka:"アイモンブレイクナウ", jp:"休憩中。", category:"daily"},
+    {en:"School's alright.", ka:"スクールズオールライ", jp:"学校はまあまあ。", category:"daily"},
+    {en:"I've got a lot to do.", ka:"アイヴガッタロットゥドゥ", jp:"やること多いんだよね。", category:"daily"},
+    {en:"How's training going?", ka:"ハウズトレーニンゴーイン", jp:"練習どう？", category:"sports"},
+    {en:"Practice was good today.", ka:"プラクティスワズグットゥデイ", jp:"今日は練習よかった。", category:"sports"},
+    {en:"My knee feels better.", ka:"マイニーフィールズベター", jp:"膝の調子よくなってきた。", category:"health"},
+    {en:"Still taking it slow.", ka:"スティルテイキニッスロウ", jp:"まだゆっくりね。", category:"health"},
+    {en:"I think I can push a bit more.", ka:"アイシンカイキャンプッシャビッモア", jp:"もうちょい頑張れそう。", category:"sports"},
+    {en:"I'll be back soon.", ka:"アイルビーバックスーン", jp:"すぐ戻るよ。", category:"health"},
+    {en:"Not this season, I guess.", ka:"ナッディスシーズン、アイゲス", jp:"今シーズンは無理かな。", category:"sports"},
+    {en:"Let's get stronger together.", ka:"レッツゲッストロンガートゥゲザー", jp:"一緒に強くなろう！", category:"sports"},
+    {en:"Good hustle today.", ka:"グッハッソトゥデイ", jp:"今日の動きよかったね。", category:"sports"},
+    {en:"I need more conditioning.", ka:"アイニードモアコンディショニン", jp:"もっと体作りしないと。", category:"sports"},
+    {en:"For real?", ka:"フォーリアル", jp:"まじ？", category:"reaction"},
+    {en:"Seriously?", ka:"シリアスリ", jp:"ほんとに？", category:"reaction"},
+    {en:"That's awesome!", ka:"ザッツオーサム", jp:"それ最高！", category:"reaction"},
+    {en:"That sucks.", ka:"ザッサックス", jp:"それはつらいな。", category:"reaction"},
+    {en:"Good for you!", ka:"グッフォーユ", jp:"よかったじゃん！", category:"reaction"},
+    {en:"I understand.", ka:"アイアンダースタンド", jp:"わかるよ。", category:"reaction"},
+    {en:"Makes sense.", ka:"メイクスセンス", jp:"なるほどね。", category:"reaction"},
+    {en:"No worries.", ka:"ノウワリーズ", jp:"気にしないで！", category:"reaction"},
+    {en:"Take it easy.", ka:"テイキリージー", jp:"無理すんなよ。", category:"reaction"},
+    {en:"No problem.", ka:"ノウプロブレム", jp:"任せとけ。", category:"reaction"},
+    {en:"You free today?", ka:"ユフリートゥデイ", jp:"今日暇？", category:"invitation"},
+    {en:"Wanna hang out?", ka:"ワナハングアウ", jp:"遊ばない？", category:"invitation"},
+    {en:"Let's hang out somewhere.", ka:"レッツハングアウトサムウェア", jp:"どっかでまったりしよ。", category:"invitation"},
+    {en:"Wanna grab coffee?", ka:"ワナグラブコーフィ", jp:"コーヒー行かん？", category:"invitation"},
+    {en:"Let's get lunch.", ka:"レッツゲッランチ", jp:"ランチ行こうよ。", category:"invitation"},
+    {en:"Feel like going for a walk?", ka:"フィールライクゴーインフォーラウォーク", jp:"散歩する？", category:"invitation"},
+    {en:"Let's go to the mall.", ka:"レッツゴートゥザモール", jp:"モール行く？", category:"invitation"},
+    {en:"You wanna study together?", ka:"ユワナスタディトゥゲザー", jp:"一緒に勉強する？", category:"invitation"},
+    {en:"Let's grab a drink later.", ka:"レッツグラバドリンクレイラー", jp:"あとで飲みに行かない？", category:"invitation"},
+    {en:"I'm craving ramen.", ka:"アイムクレイヴィンラーメン", jp:"ラーメン食べたい。", category:"food"},
+    {en:"Join me?", ka:"ジョインミ", jp:"一緒にどう？", category:"invitation"},
+    {en:"I'm hungry.", ka:"アイムハングリ", jp:"お腹すいた。", category:"food"},
+    {en:"I want something sweet.", ka:"アイウォンサムシンスウィー", jp:"甘いもの食べたい。", category:"food"},
+    {en:"Let's order something.", ka:"レッツオーダーサムシン", jp:"なんか頼もう。", category:"food"},
+    {en:"This place looks good.", ka:"ディスプレイスルックスグッ", jp:"ここ良さそうだね。", category:"food"},
+    {en:"What do you recommend?", ka:"ワッドゥユレコメン", jp:"おすすめある？", category:"food"},
+    {en:"This is so good!", ka:"ディスィズソーグッ", jp:"これめっちゃうまい！", category:"food"},
+    {en:"Try this!", ka:"トライディス", jp:"これ食べてみて！", category:"food"},
+    {en:"Wanna share?", ka:"ワナシェア", jp:"シェアする？", category:"food"},
+    {en:"I'm full.", ka:"アイムフル", jp:"お腹いっぱい。", category:"food"},
+    {en:"Let's get dessert.", ka:"レッツゲッデザー", jp:"デザートいこ！", category:"food"},
+    {en:"No way!", ka:"ノウウェイ", jp:"うそでしょ！", category:"reaction"},
+    {en:"You're kidding!", ka:"ユアキディン", jp:"冗談だろ！", category:"reaction"},
+    {en:"Stop it.", ka:"スタッピッ", jp:"やめろよ。", category:"reaction"},
+    {en:"I knew it!", ka:"アイニューイッ", jp:"やっぱり！", category:"reaction"},
+    {en:"That's crazy.", ka:"ザッツクレイジー", jp:"それヤバい。", category:"reaction"},
+    {en:"I love that.", ka:"アイラヴザッ", jp:"それ好きだわ。", category:"reaction"},
+    {en:"Let's go!", ka:"レッツゴー", jp:"よっしゃ！", category:"reaction"},
+    {en:"See ya!", ka:"シーヤ", jp:"じゃあね！", category:"farewell"},
+    {en:"See you later.", ka:"シーユーレイター", jp:"またあとで！", category:"farewell"},
+    {en:"Take care.", ka:"テイケア", jp:"気をつけてね。", category:"farewell"},
+    {en:"Text me later.", ka:"テクスミーレイラー", jp:"あとで連絡して！", category:"farewell"},
+    {en:"Let's hang out again soon.", ka:"レッツハングアウアゲンスーン", jp:"また近いうち遊ぼう！", category:"farewell"},
+    {en:"How have you been?", ka:"ハウハヴユビン", jp:"元気だった？", category:"greeting"},
+    {en:"I've been good!", ka:"アイヴビングッ", jp:"元気よ！", category:"greeting"},
+    {en:"How about you?", ka:"ハウアバウチュー", jp:"そっちは？", category:"greeting"},
+    {en:"I'm doing great!", ka:"アイムドゥーイングレイ", jp:"めっちゃ元気よ！", category:"greeting"},
+    {en:"No issues so far!", ka:"ノウイシューズソーファー", jp:"特に問題なし！", category:"daily"},
+    {en:"Feeling really good these days.", ka:"フィーリンリアリグッディーズデイズ", jp:"かなり順調！", category:"daily"},
+    {en:"Glad to hear that!", ka:"グラットゥヒアザッ", jp:"良かった！", category:"reaction"},
+    {en:"They're doing great!", ka:"ゼアドゥーイングレイ", jp:"元気だよ！", category:"daily"},
+    {en:"That's awesome though!", ka:"ザッツオーサムドウ", jp:"すごくいいことだね！", category:"reaction"},
+    {en:"When are you planning to come back?", ka:"ウェンアーユプランニントゥカムバック", jp:"いつ頃復帰予定なの？", category:"sports"},
+    {en:"He is a toy poodle", ka:"ヒーイズアトイプードル", jp:"彼はトイプードルです", category:"pet"},
+    {en:"His name is Tuna", ka:"ヒズネイムイズツナ", jp:"彼の名前はツナです", category:"pet"},
+    {en:"My girlfriend does it", ka:"マイガールフレンドダズイット", jp:"私の彼女がそれをします", category:"pet"},
+    {en:"She is his mother", ka:"シーイズヒズマザー", jp:"彼女は彼のお母さんです", category:"pet"},
+    {en:"My girlfriend takes him for walks", ka:"マイガールフレンドテイクスヒムフォーウォークス", jp:"私の彼女が散歩に連れて行きます", category:"pet"},
+    {en:"He loves me", ka:"ヒーラヴズミー", jp:"彼は私を愛しています", category:"pet"},
+    {en:"She thinks about me", ka:"シーシンクスアバウトミー", jp:"彼女は私について考えています", category:"pet"},
+    {en:"He brings it back to me", ka:"ヒーブリングスイットバックトゥミー", jp:"彼はボールを持って帰ってきます", category:"pet"},
   ],
 
   rearrangeProblems: [
-    {jp:"彼女について心配しています", correctEn:"I am worried about her", choices:["I","am","worried","about","her","for","to"], difficulty:"beginner"},
-    {jp:"2週間後に歩けます", correctEn:"I will be able to walk in two weeks", choices:["I","will","be","able","to","walk","in","two","weeks","for","after"], difficulty:"beginner"},
-    {jp:"会社のクラブでラグビーをしています", correctEn:"I play rugby in my company club", choices:["I","play","rugby","in","my","company","club","at","the"], difficulty:"beginner"},
-    {jp:"試合中に怪我をしました", correctEn:"I got injured during a game", choices:["I","got","injured","during","a","game","in","at"], difficulty:"beginner"},
-    {jp:"膝を怪我しました", correctEn:"I got injured in my knee", choices:["I","got","injured","in","my","knee","on","at"], difficulty:"beginner"},
-    {jp:"彼はトイプードルです", correctEn:"He is a toy poodle", choices:["He","is","a","toy","poodle","the","an"], difficulty:"beginner"},
-    {jp:"彼の名前はツナです", correctEn:"His name is Tuna", choices:["His","name","is","Tuna","He","are"], difficulty:"beginner"},
-    {jp:"私の彼女がそれをします", correctEn:"My girlfriend does it", choices:["My","girlfriend","does","it","do","a"], difficulty:"beginner"},
-    {jp:"彼のお気に入りのおもちゃはボールです", correctEn:"His favorite toy is a ball", choices:["His","favorite","toy","is","a","ball","the","toys"], difficulty:"beginner"},
-    {jp:"彼女は彼のお母さんです", correctEn:"She is his mother", choices:["She","is","his","mother","he","her"], difficulty:"beginner"},
-    {jp:"私の彼女が散歩に連れて行きます", correctEn:"My girlfriend takes him for walks", choices:["My","girlfriend","takes","him","for","walks","take","a"], difficulty:"beginner"},
-    {jp:"彼は私を愛しています", correctEn:"He loves me", choices:["He","loves","me","love","is"], difficulty:"beginner"},
-    {jp:"彼女は私について考えています", correctEn:"She thinks about me", choices:["She","thinks","about","me","think","of"], difficulty:"beginner"},
-    {jp:"彼はボールを持って帰ってきます", correctEn:"He brings it back to me", choices:["He","brings","it","back","to","me","bring","for"], difficulty:"beginner"},
-    {jp:"彼女はそれについて知っています", correctEn:"She knows about it", choices:["She","knows","about","it","know","of"], difficulty:"beginner"},
-    {jp:"ラグビーをしていました", correctEn:"I was playing rugby", choices:["I","was","playing","rugby","were","play"], difficulty:"beginner"},
-    {jp:"病院に滞在していました", correctEn:"I was staying in a hospital", choices:["I","was","staying","in","a","hospital","were","stay"], difficulty:"beginner"},
-    {jp:"今向かっています", correctEn:"I am on my way", choices:["I","am","on","my","way","is","in"], difficulty:"beginner"},
-    {jp:"犬と遊んでいます", correctEn:"I am playing with my dog", choices:["I","am","playing","with","my","dog","is","a"], difficulty:"beginner"},
-    {jp:"リハビリを始めました", correctEn:"I started rehabilitation", choices:["I","started","rehabilitation","start","a"], difficulty:"beginner"},
-    {jp:"運転が好きです", correctEn:"I like driving", choices:["I","like","driving","drive","to"], difficulty:"beginner"},
-    {jp:"ラーメンが食べたいです", correctEn:"I want to eat ramen", choices:["I","want","to","eat","ramen","eating","a"], difficulty:"beginner"},
-    {jp:"犬と遊ぶのが好きです", correctEn:"I like playing with my dog", choices:["I","like","playing","with","my","dog","play","to"], difficulty:"beginner"},
-    {jp:"休憩したいです", correctEn:"I want to take a break", choices:["I","want","to","take","a","break","taking"], difficulty:"beginner"},
-    {jp:"もっとコーヒーが必要です", correctEn:"I need more coffee", choices:["I","need","more","coffee","a","the"], difficulty:"beginner"},
-    {jp:"私の計画は車で行くことです", correctEn:"My plan is to go by car", choices:["My","plan","is","to","go","by","car","for","will"], difficulty:"beginner"},
-    {jp:"休みの日はいつも犬と遊びます", correctEn:"I always play with my dog on my free days", choices:["I","always","play","with","my","dog","on","my","free","days","in","at"], difficulty:"beginner"},
-    {jp:"それについて心配していません", correctEn:"I do not worry about it", choices:["I","do","not","worry","about","it","am","for"], difficulty:"beginner"},
-    {jp:"4ヶ月前に一緒に暮らし始めました", correctEn:"I started living with him four months ago", choices:["I","started","living","with","him","four","months","ago","start","before"], difficulty:"beginner"},
-    {jp:"彼がどう思っているかわかりません", correctEn:"I do not know what he thinks", choices:["I","do","not","know","what","he","thinks","think","about"], difficulty:"beginner"},
-    {jp:"強くなって戻るのが待ちきれません", correctEn:"I can not wait to come back stronger", choices:["I","can","not","wait","to","come","back","stronger","more","very"], difficulty:"beginner"},
-    {jp:"それを望んでいます", correctEn:"I hope so", choices:["I","hope","so","it","that"], difficulty:"beginner"},
-    {jp:"そう思います", correctEn:"I think so", choices:["I","think","so","it","that"], difficulty:"beginner"},
-    {jp:"自分に期待しています", correctEn:"I have expectations for myself", choices:["I","have","expectations","for","myself","expectation","to"], difficulty:"beginner"},
-    {jp:"とても恋しいです", correctEn:"I miss it very much", choices:["I","miss","it","very","much","a","lot"], difficulty:"beginner"},
-    {jp:"2週間後には歩けるようになります", correctEn:"I will be able to walk in two weeks", choices:["I","will","be","able","to","walk","in","two","weeks","can","for"], difficulty:"beginner"},
-    {jp:"車で行く予定です", correctEn:"I plan to go by car", choices:["I","plan","to","go","by","car","for","will"], difficulty:"beginner"},
-    {jp:"すぐに戻ります", correctEn:"I will be back soon", choices:["I","will","be","back","soon","am","come"], difficulty:"beginner"},
-    {jp:"一緒に強くなりましょう", correctEn:"Let us get stronger together", choices:["Let","us","get","stronger","together","more","very"], difficulty:"beginner"},
-    {jp:"もう少し頑張れそうです", correctEn:"I think I can push a bit more", choices:["I","think","can","push","a","bit","more","could","little"], difficulty:"beginner"},
-    {jp:"東京に住んでいます", correctEn:"I live in Tokyo", choices:["I","live","in","Tokyo","at","on"], difficulty:"beginner"},
-    {jp:"朝に運動します", correctEn:"I exercise in the morning", choices:["I","exercise","in","the","morning","at","on"], difficulty:"beginner"},
-    {jp:"週末に会いましょう", correctEn:"Let us meet on the weekend", choices:["Let","us","meet","on","the","weekend","in","at"], difficulty:"beginner"},
-    {jp:"彼のために料理します", correctEn:"I cook for him", choices:["I","cook","for","him","to","with"], difficulty:"beginner"},
-    {jp:"彼と一緒に住んでいます", correctEn:"I live with him", choices:["I","live","with","him","to","and"], difficulty:"beginner"},
-    {jp:"元気ですか", correctEn:"How are you doing", choices:["How","are","you","doing","do","is"], difficulty:"beginner"},
-    {jp:"久しぶりです", correctEn:"Long time no see", choices:["Long","time","no","see","not","a"], difficulty:"beginner"},
-    {jp:"会えて嬉しいです", correctEn:"Good to see you", choices:["Good","to","see","you","is","for"], difficulty:"beginner"},
-    {jp:"最近忙しかったです", correctEn:"I have been busy lately", choices:["I","have","been","busy","lately","am","was"], difficulty:"beginner"},
-    {jp:"ありがとうございます", correctEn:"Thank you very much", choices:["Thank","you","very","much","so","a"], difficulty:"beginner"},
-    {jp:"彼女は毎日散歩に連れて行ってくれます", correctEn:"His girlfriend takes him for walks every day", choices:["His","girlfriend","takes","him","for","walks","every","day","take","a","the"], difficulty:"intermediate"},
-    {jp:"膝のせいで今は歩けません", correctEn:"I can not walk right now because of my knee", choices:["I","can","not","walk","right","now","because","of","my","knee","for","the"], difficulty:"intermediate"},
-    {jp:"手術は2週間前でした", correctEn:"The operation was two weeks ago", choices:["The","operation","was","two","weeks","ago","is","a","before"], difficulty:"intermediate"},
-    {jp:"長いリハビリ計画があります", correctEn:"I have a very long rehabilitation plan", choices:["I","have","a","very","long","rehabilitation","plan","the","plans"], difficulty:"intermediate"},
-    {jp:"少し痛みがありますが大丈夫です", correctEn:"I have a little pain but I am okay", choices:["I","have","a","little","pain","but","am","okay","some","very"], difficulty:"intermediate"},
-    {jp:"彼が長時間走っている時は座っています", correctEn:"I sit down when he runs for a long time", choices:["I","sit","down","when","he","runs","for","a","long","time","sitting","very"], difficulty:"intermediate"},
-    {jp:"彼はよくしつけられています", correctEn:"He is well trained", choices:["He","is","well","trained","very","good","a"], difficulty:"intermediate"},
-    {jp:"約4ヶ月前に一緒に暮らし始めました", correctEn:"I started living with him about four months ago", choices:["I","started","living","with","him","about","four","months","ago","start","before","the"], difficulty:"intermediate"},
-    {jp:"彼がそれについてどう思っているかわかりません", correctEn:"I do not know what he thinks about that", choices:["I","do","not","know","what","he","thinks","about","that","think","of","it"], difficulty:"intermediate"},
-    {jp:"彼は私を愛していると思います", correctEn:"I think he loves me", choices:["I","think","he","loves","me","love","is","that"], difficulty:"intermediate"},
-    {jp:"休みの日に犬と遊ぶのが好きです", correctEn:"I like playing with my dog on my free days", choices:["I","like","playing","with","my","dog","on","my","free","days","play","in","at","the"], difficulty:"intermediate"},
-    {jp:"会社のクラブでラグビーをしていた時に怪我をしました", correctEn:"I got injured when I was playing rugby in my company club", choices:["I","got","injured","when","was","playing","rugby","in","my","company","club","get","at","the"], difficulty:"intermediate"},
-    {jp:"より強くなって戻るのが待ちきれません", correctEn:"I can not wait to come back stronger", choices:["I","can","not","wait","to","come","back","stronger","more","very","strong"], difficulty:"intermediate"},
-    {jp:"いつ頃復帰予定ですか", correctEn:"When are you planning to come back", choices:["When","are","you","planning","to","come","back","plan","is","will"], difficulty:"intermediate"},
-    {jp:"彼は家で休んでいる間良い相棒です", correctEn:"He is good company while I am resting at home", choices:["He","is","good","company","while","I","am","resting","at","home","a","the","rest"], difficulty:"intermediate"},
-    {jp:"何か食べに行きませんか", correctEn:"Do you want to grab some food", choices:["Do","you","want","to","grab","some","food","get","a","the"], difficulty:"intermediate"},
-    {jp:"あの新しい店を試してみましょう", correctEn:"Let us try that new place", choices:["Let","us","try","that","new","place","the","a","shop"], difficulty:"intermediate"},
-    {jp:"今夜ピザはどうですか", correctEn:"How about pizza tonight", choices:["How","about","pizza","tonight","is","a","the"], difficulty:"intermediate"},
-    {jp:"割り勘にしましょう", correctEn:"Let us split the bill", choices:["Let","us","split","the","bill","a","check"], difficulty:"intermediate"},
-    {jp:"今日は私のおごりです", correctEn:"This is on me today", choices:["This","is","on","me","today","for","my"], difficulty:"intermediate"},
-    {jp:"もう一回言ってもらえますか", correctEn:"Can you say that again", choices:["Can","you","say","that","again","it","please"], difficulty:"intermediate"},
-    {jp:"それはどういう意味ですか", correctEn:"What does that mean", choices:["What","does","that","mean","do","is","it"], difficulty:"intermediate"},
-    {jp:"これは何と言いますか", correctEn:"How do you say this", choices:["How","do","you","say","this","that","it"], difficulty:"intermediate"},
-    {jp:"まだ英語を勉強中です", correctEn:"I am still learning English", choices:["I","am","still","learning","English","learn","study"], difficulty:"intermediate"},
-    {jp:"ゆっくり話してもらえますか", correctEn:"Can you speak slowly", choices:["Can","you","speak","slowly","talk","more","please"], difficulty:"intermediate"},
-    {jp:"最善を尽くしています", correctEn:"I am trying my best", choices:["I","am","trying","my","best","do","very"], difficulty:"intermediate"},
-    {jp:"それは私にとって新しい単語です", correctEn:"That is a new word for me", choices:["That","is","a","new","word","for","me","the","to"], difficulty:"intermediate"},
-    {jp:"今とてもお腹が空いています", correctEn:"I am starving right now", choices:["I","am","starving","right","now","very","hungry"], difficulty:"intermediate"},
-    {jp:"何が食べたい気分ですか", correctEn:"What are you craving", choices:["What","are","you","craving","want","do","like"], difficulty:"intermediate"},
-    {jp:"あの店は本当に美味しいです", correctEn:"That place is really good", choices:["That","place","is","really","good","very","a","the"], difficulty:"intermediate"},
-    {jp:"ごちそうさまでした", correctEn:"Thanks for treating me", choices:["Thanks","for","treating","me","thank","you","to"], difficulty:"intermediate"},
-    {jp:"私は朝が弱い人間です", correctEn:"I am not a morning person", choices:["I","am","not","a","morning","person","the","good"], difficulty:"intermediate"},
-    {jp:"それはとても突然ですね", correctEn:"That is so random", choices:["That","is","so","random","very","suddenly","a"], difficulty:"intermediate"},
-    {jp:"本気で言っています", correctEn:"I am dead serious", choices:["I","am","dead","serious","very","really","so"], difficulty:"intermediate"},
-    {jp:"それは絶対に起こらなかったでしょう", correctEn:"No way that happened", choices:["No","way","that","happened","not","it","did"], difficulty:"intermediate"},
-    {jp:"それはとても面白いです", correctEn:"That is hilarious", choices:["That","is","hilarious","very","funny","so"], difficulty:"intermediate"},
-    {jp:"あなたは私の一日を最高にしてくれました", correctEn:"You made my day", choices:["You","made","my","day","make","the","a"], difficulty:"intermediate"},
-    {jp:"今日疲れているように見えます", correctEn:"You look tired today", choices:["You","look","tired","today","are","very","so"], difficulty:"intermediate"},
-    {jp:"よく眠れましたか", correctEn:"Did you sleep well", choices:["Did","you","sleep","well","do","good","very"], difficulty:"intermediate"},
-    {jp:"夜更かしをしてしまいました", correctEn:"I stayed up late", choices:["I","stayed","up","late","stay","very","so"], difficulty:"intermediate"},
-    {jp:"休憩を取りましょう", correctEn:"Let us take a break", choices:["Let","us","take","a","break","get","some"], difficulty:"intermediate"},
-    {jp:"ストレッチする必要があります", correctEn:"I need to stretch", choices:["I","need","to","stretch","must","should","do"], difficulty:"intermediate"},
-    {jp:"今日の予定は何ですか", correctEn:"What is your plan today", choices:["What","is","your","plan","today","are","for"], difficulty:"intermediate"},
-    {jp:"一日中暇です", correctEn:"I am free all day", choices:["I","am","free","all","day","the","whole"], difficulty:"intermediate"},
-    {jp:"何か楽しいことをしましょう", correctEn:"Let us do something fun", choices:["Let","us","do","something","fun","some","a"], difficulty:"intermediate"},
-    {jp:"それに賛成です", correctEn:"I am down for that", choices:["I","am","down","for","that","it","okay"], difficulty:"intermediate"},
-    {jp:"私も参加させてください", correctEn:"Count me in", choices:["Count","me","in","too","also","please"], difficulty:"intermediate"},
-    {jp:"家に着いたらメッセージください", correctEn:"Text me when you are home", choices:["Text","me","when","you","are","home","get","at"], difficulty:"intermediate"},
-    {jp:"いいですねそうしましょう", correctEn:"Sounds like a plan", choices:["Sounds","like","a","plan","good","idea","the"], difficulty:"intermediate"},
-    {jp:"少し遅れています", correctEn:"I am running a bit late", choices:["I","am","running","a","bit","late","little","some"], difficulty:"advanced"},
-  ],
+  {jp:"彼女について心配しています", correctEn:"I am worried about her", choices:["I","am","worried","about","her","for","to"], difficulty:"beginner", category:"daily"},
+  {jp:"2週間後に歩けます", correctEn:"I will be able to walk in two weeks", choices:["I","will","be","able","to","walk","in","two","weeks","for","after"], difficulty:"beginner", category:"health"},
+  {jp:"会社のクラブでラグビーをしています", correctEn:"I play rugby in my company club", choices:["I","play","rugby","in","my","company","club","at","the"], difficulty:"beginner", category:"sports"},
+  {jp:"試合中に怪我をしました", correctEn:"I got injured during a game", choices:["I","got","injured","during","a","game","in","at"], difficulty:"beginner", category:"health"},
+  {jp:"膝を怪我しました", correctEn:"I got injured in my knee", choices:["I","got","injured","in","my","knee","on","at"], difficulty:"beginner", category:"health"},
+  {jp:"彼はトイプードルです", correctEn:"He is a toy poodle", choices:["He","is","a","toy","poodle","the","an"], difficulty:"beginner", category:"pet"},
+  {jp:"彼の名前はツナです", correctEn:"His name is Tuna", choices:["His","name","is","Tuna","He","are"], difficulty:"beginner", category:"pet"},
+  {jp:"私の彼女がそれをします", correctEn:"My girlfriend does it", choices:["My","girlfriend","does","it","do","a"], difficulty:"beginner", category:"pet"},
+  {jp:"彼のお気に入りのおもちゃはボールです", correctEn:"His favorite toy is a ball", choices:["His","favorite","toy","is","a","ball","the","toys"], difficulty:"beginner", category:"pet"},
+  {jp:"彼女は彼のお母さんです", correctEn:"She is his mother", choices:["She","is","his","mother","he","her"], difficulty:"beginner", category:"pet"},
+  {jp:"私の彼女が散歩に連れて行きます", correctEn:"My girlfriend takes him for walks", choices:["My","girlfriend","takes","him","for","walks","take","a"], difficulty:"beginner", category:"pet"},
+  {jp:"彼は私を愛しています", correctEn:"He loves me", choices:["He","loves","me","love","is"], difficulty:"beginner", category:"pet"},
+  {jp:"彼女は私について考えています", correctEn:"She thinks about me", choices:["She","thinks","about","me","think","of"], difficulty:"beginner", category:"pet"},
+  {jp:"彼はボールを持って帰ってきます", correctEn:"He brings it back to me", choices:["He","brings","it","back","to","me","bring","for"], difficulty:"beginner", category:"pet"},
+  {jp:"彼女はそれについて知っています", correctEn:"She knows about it", choices:["She","knows","about","it","know","of"], difficulty:"beginner", category:"daily"},
+  {jp:"ラグビーをしていました", correctEn:"I was playing rugby", choices:["I","was","playing","rugby","were","play"], difficulty:"beginner", category:"sports"},
+  {jp:"病院に滞在していました", correctEn:"I was staying in a hospital", choices:["I","was","staying","in","a","hospital","were","stay"], difficulty:"beginner", category:"health"},
+  {jp:"今向かっています", correctEn:"I am on my way", choices:["I","am","on","my","way","is","in"], difficulty:"beginner", category:"daily"},
+  {jp:"犬と遊んでいます", correctEn:"I am playing with my dog", choices:["I","am","playing","with","my","dog","is","a"], difficulty:"beginner", category:"pet"},
+  {jp:"リハビリを始めました", correctEn:"I started rehabilitation", choices:["I","started","rehabilitation","start","a"], difficulty:"beginner", category:"health"},
+  {jp:"運転が好きです", correctEn:"I like driving", choices:["I","like","driving","drive","to"], difficulty:"beginner", category:"daily"},
+  {jp:"ラーメンが食べたいです", correctEn:"I want to eat ramen", choices:["I","want","to","eat","ramen","eating","a"], difficulty:"beginner", category:"daily"},
+  {jp:"犬と遊ぶのが好きです", correctEn:"I like playing with my dog", choices:["I","like","playing","with","my","dog","play","to"], difficulty:"beginner", category:"pet"},
+  {jp:"休憩したいです", correctEn:"I want to take a break", choices:["I","want","to","take","a","break","taking"], difficulty:"beginner", category:"daily"},
+  {jp:"もっとコーヒーが必要です", correctEn:"I need more coffee", choices:["I","need","more","coffee","a","the"], difficulty:"beginner", category:"daily"},
+  {jp:"私の計画は車で行くことです", correctEn:"My plan is to go by car", choices:["My","plan","is","to","go","by","car","for","will"], difficulty:"beginner", category:"daily"},
+  {jp:"休みの日はいつも犬と遊びます", correctEn:"I always play with my dog on my free days", choices:["I","always","play","with","my","dog","on","my","free","days","in","at"], difficulty:"beginner", category:"pet"},
+  {jp:"それについて心配していません", correctEn:"I do not worry about it", choices:["I","do","not","worry","about","it","am","for"], difficulty:"beginner", category:"daily"},
+  {jp:"4ヶ月前に一緒に暮らし始めました", correctEn:"I started living with him four months ago", choices:["I","started","living","with","him","four","months","ago","start","before"], difficulty:"beginner", category:"pet"},
+  {jp:"彼がどう思っているかわかりません", correctEn:"I do not know what he thinks", choices:["I","do","not","know","what","he","thinks","think","about"], difficulty:"beginner", category:"daily"},
+  {jp:"強くなって戻るのが待ちきれません", correctEn:"I can not wait to come back stronger", choices:["I","can","not","wait","to","come","back","stronger","more","very"], difficulty:"beginner", category:"sports"},
+  {jp:"それを望んでいます", correctEn:"I hope so", choices:["I","hope","so","it","that"], difficulty:"beginner", category:"daily"},
+  {jp:"そう思います", correctEn:"I think so", choices:["I","think","so","it","that"], difficulty:"beginner", category:"daily"},
+  {jp:"自分に期待しています", correctEn:"I have expectations for myself", choices:["I","have","expectations","for","myself","expectation","to"], difficulty:"beginner", category:"daily"},
+  {jp:"とても恋しいです", correctEn:"I miss it very much", choices:["I","miss","it","very","much","a","lot"], difficulty:"beginner", category:"daily"},
+  {jp:"2週間後には歩けるようになります", correctEn:"I will be able to walk in two weeks", choices:["I","will","be","able","to","walk","in","two","weeks","can","for"], difficulty:"beginner", category:"health"},
+  {jp:"車で行く予定です", correctEn:"I plan to go by car", choices:["I","plan","to","go","by","car","for","will"], difficulty:"beginner", category:"daily"},
+  {jp:"すぐに戻ります", correctEn:"I will be back soon", choices:["I","will","be","back","soon","am","come"], difficulty:"beginner", category:"daily"},
+  {jp:"一緒に強くなりましょう", correctEn:"Let us get stronger together", choices:["Let","us","get","stronger","together","more","very"], difficulty:"beginner", category:"sports"},
+  {jp:"もう少し頑張れそうです", correctEn:"I think I can push a bit more", choices:["I","think","can","push","a","bit","more","could","little"], difficulty:"beginner", category:"sports"},
+  {jp:"東京に住んでいます", correctEn:"I live in Tokyo", choices:["I","live","in","Tokyo","at","on"], difficulty:"beginner", category:"daily"},
+  {jp:"朝に運動します", correctEn:"I exercise in the morning", choices:["I","exercise","in","the","morning","at","on"], difficulty:"beginner", category:"daily"},
+  {jp:"週末に会いましょう", correctEn:"Let us meet on the weekend", choices:["Let","us","meet","on","the","weekend","in","at"], difficulty:"beginner", category:"daily"},
+  {jp:"彼のために料理します", correctEn:"I cook for him", choices:["I","cook","for","him","to","with"], difficulty:"beginner", category:"daily"},
+  {jp:"彼と一緒に住んでいます", correctEn:"I live with him", choices:["I","live","with","him","to","and"], difficulty:"beginner", category:"daily"},
+  {jp:"元気ですか", correctEn:"How are you doing", choices:["How","are","you","doing","do","is"], difficulty:"beginner", category:"daily"},
+  {jp:"久しぶりです", correctEn:"Long time no see", choices:["Long","time","no","see","not","a"], difficulty:"beginner", category:"daily"},
+  {jp:"会えて嬉しいです", correctEn:"Good to see you", choices:["Good","to","see","you","is","for"], difficulty:"beginner", category:"daily"},
+  {jp:"最近忙しかったです", correctEn:"I have been busy lately", choices:["I","have","been","busy","lately","am","was"], difficulty:"beginner", category:"daily"},
+  {jp:"ありがとうございます", correctEn:"Thank you very much", choices:["Thank","you","very","much","so","a"], difficulty:"beginner", category:"daily"},
+  {jp:"彼女は毎日散歩に連れて行ってくれます", correctEn:"His girlfriend takes him for walks every day", choices:["His","girlfriend","takes","him","for","walks","every","day","take","a","the"], difficulty:"intermediate", category:"pet"},
+  {jp:"膝のせいで今は歩けません", correctEn:"I can not walk right now because of my knee", choices:["I","can","not","walk","right","now","because","of","my","knee","for","the"], difficulty:"intermediate", category:"health"},
+  {jp:"手術は2週間前でした", correctEn:"The operation was two weeks ago", choices:["The","operation","was","two","weeks","ago","is","a","before"], difficulty:"intermediate", category:"health"},
+  {jp:"長いリハビリ計画があります", correctEn:"I have a very long rehabilitation plan", choices:["I","have","a","very","long","rehabilitation","plan","the","plans"], difficulty:"intermediate", category:"health"},
+  {jp:"少し痛みがありますが大丈夫です", correctEn:"I have a little pain but I am okay", choices:["I","have","a","little","pain","but","am","okay","some","very"], difficulty:"intermediate", category:"health"},
+  {jp:"彼が長時間走っている時は座っています", correctEn:"I sit down when he runs for a long time", choices:["I","sit","down","when","he","runs","for","a","long","time","sitting","very"], difficulty:"intermediate", category:"pet"},
+  {jp:"彼はよくしつけられています", correctEn:"He is well trained", choices:["He","is","well","trained","very","good","a"], difficulty:"intermediate", category:"pet"},
+  {jp:"約4ヶ月前に一緒に暮らし始めました", correctEn:"I started living with him about four months ago", choices:["I","started","living","with","him","about","four","months","ago","start","before","the"], difficulty:"intermediate", category:"pet"},
+  {jp:"彼がそれについてどう思っているかわかりません", correctEn:"I do not know what he thinks about that", choices:["I","do","not","know","what","he","thinks","about","that","think","of","it"], difficulty:"intermediate", category:"pet"},
+  {jp:"彼は私を愛していると思います", correctEn:"I think he loves me", choices:["I","think","he","loves","me","love","is","that"], difficulty:"intermediate", category:"pet"},
+  {jp:"休みの日に犬と遊ぶのが好きです", correctEn:"I like playing with my dog on my free days", choices:["I","like","playing","with","my","dog","on","my","free","days","play","in","at","the"], difficulty:"intermediate", category:"pet"},
+  {jp:"会社のクラブでラグビーをしていた時に怪我をしました", correctEn:"I got injured when I was playing rugby in my company club", choices:["I","got","injured","when","was","playing","rugby","in","my","company","club","get","at","the"], difficulty:"intermediate", category:"sports"},
+  {jp:"より強くなって戻るのが待ちきれません", correctEn:"I can not wait to come back stronger", choices:["I","can","not","wait","to","come","back","stronger","more","very","strong"], difficulty:"intermediate", category:"sports"},
+  {jp:"いつ頃復帰予定ですか", correctEn:"When are you planning to come back", choices:["When","are","you","planning","to","come","back","plan","is","will"], difficulty:"intermediate", category:"sports"},
+  {jp:"彼は家で休んでいる間良い相棒です", correctEn:"He is good company while I am resting at home", choices:["He","is","good","company","while","I","am","resting","at","home","a","the","rest"], difficulty:"intermediate", category:"pet"},
+  {jp:"何か食べに行きませんか", correctEn:"Do you want to grab some food", choices:["Do","you","want","to","grab","some","food","get","a","the"], difficulty:"intermediate", category:"daily"},
+  {jp:"あの新しい店を試してみましょう", correctEn:"Let us try that new place", choices:["Let","us","try","that","new","place","the","a","shop"], difficulty:"intermediate", category:"daily"},
+  {jp:"今夜ピザはどうですか", correctEn:"How about pizza tonight", choices:["How","about","pizza","tonight","is","a","the"], difficulty:"intermediate", category:"daily"},
+  {jp:"割り勘にしましょう", correctEn:"Let us split the bill", choices:["Let","us","split","the","bill","a","check"], difficulty:"intermediate", category:"daily"},
+  {jp:"今日は私のおごりです", correctEn:"This is on me today", choices:["This","is","on","me","today","for","my"], difficulty:"intermediate", category:"daily"},
+  {jp:"もう一回言ってもらえますか", correctEn:"Can you say that again", choices:["Can","you","say","that","again","it","please"], difficulty:"intermediate", category:"learning"},
+  {jp:"それはどういう意味ですか", correctEn:"What does that mean", choices:["What","does","that","mean","do","is","it"], difficulty:"intermediate", category:"learning"},
+  {jp:"これは何と言いますか", correctEn:"How do you say this", choices:["How","do","you","say","this","that","it"], difficulty:"intermediate", category:"learning"},
+  {jp:"まだ英語を勉強中です", correctEn:"I am still learning English", choices:["I","am","still","learning","English","learn","study"], difficulty:"intermediate", category:"learning"},
+  {jp:"ゆっくり話してもらえますか", correctEn:"Can you speak slowly", choices:["Can","you","speak","slowly","talk","more","please"], difficulty:"intermediate", category:"learning"},
+  {jp:"最善を尽くしています", correctEn:"I am trying my best", choices:["I","am","trying","my","best","do","very"], difficulty:"intermediate", category:"daily"},
+  {jp:"それは私にとって新しい単語です", correctEn:"That is a new word for me", choices:["That","is","a","new","word","for","me","the","to"], difficulty:"intermediate", category:"learning"},
+  {jp:"今とてもお腹が空いています", correctEn:"I am starving right now", choices:["I","am","starving","right","now","very","hungry"], difficulty:"intermediate", category:"daily"},
+  {jp:"何が食べたい気分ですか", correctEn:"What are you craving", choices:["What","are","you","craving","want","do","like"], difficulty:"intermediate", category:"daily"},
+  {jp:"あの店は本当に美味しいです", correctEn:"That place is really good", choices:["That","place","is","really","good","very","a","the"], difficulty:"intermediate", category:"daily"},
+  {jp:"ごちそうさまでした", correctEn:"Thanks for treating me", choices:["Thanks","for","treating","me","thank","you","to"], difficulty:"intermediate", category:"daily"},
+  {jp:"私は朝が弱い人間です", correctEn:"I am not a morning person", choices:["I","am","not","a","morning","person","the","good"], difficulty:"intermediate", category:"daily"},
+  {jp:"それはとても突然ですね", correctEn:"That is so random", choices:["That","is","so","random","very","suddenly","a"], difficulty:"intermediate", category:"daily"},
+  {jp:"本気で言っています", correctEn:"I am dead serious", choices:["I","am","dead","serious","very","really","so"], difficulty:"intermediate", category:"daily"},
+  {jp:"それは絶対に起こらなかったでしょう", correctEn:"No way that happened", choices:["No","way","that","happened","not","it","did"], difficulty:"intermediate", category:"daily"},
+  {jp:"それはとても面白いです", correctEn:"That is hilarious", choices:["That","is","hilarious","very","funny","so"], difficulty:"intermediate", category:"daily"},
+  {jp:"あなたは私の一日を最高にしてくれました", correctEn:"You made my day", choices:["You","made","my","day","make","the","a"], difficulty:"intermediate", category:"daily"},
+  {jp:"今日疲れているように見えます", correctEn:"You look tired today", choices:["You","look","tired","today","are","very","so"], difficulty:"intermediate", category:"daily"},
+  {jp:"よく眠れましたか", correctEn:"Did you sleep well", choices:["Did","you","sleep","well","do","good","very"], difficulty:"intermediate", category:"daily"},
+  {jp:"夜更かしをしてしまいました", correctEn:"I stayed up late", choices:["I","stayed","up","late","stay","very","so"], difficulty:"intermediate", category:"daily"},
+  {jp:"休憩を取りましょう", correctEn:"Let us take a break", choices:["Let","us","take","a","break","get","some"], difficulty:"intermediate", category:"daily"},
+  {jp:"ストレッチする必要があります", correctEn:"I need to stretch", choices:["I","need","to","stretch","must","should","do"], difficulty:"intermediate", category:"daily"},
+  {jp:"今日の予定は何ですか", correctEn:"What is your plan today", choices:["What","is","your","plan","today","are","for"], difficulty:"intermediate", category:"daily"},
+  {jp:"一日中暇です", correctEn:"I am free all day", choices:["I","am","free","all","day","the","whole"], difficulty:"intermediate", category:"daily"},
+  {jp:"何か楽しいことをしましょう", correctEn:"Let us do something fun", choices:["Let","us","do","something","fun","some","a"], difficulty:"intermediate", category:"daily"},
+  {jp:"それに賛成です", correctEn:"I am down for that", choices:["I","am","down","for","that","it","okay"], difficulty:"intermediate", category:"daily"},
+  {jp:"私も参加させてください", correctEn:"Count me in", choices:["Count","me","in","too","also","please"], difficulty:"intermediate", category:"daily"},
+  {jp:"家に着いたらメッセージください", correctEn:"Text me when you are home", choices:["Text","me","when","you","are","home","get","at"], difficulty:"intermediate", category:"daily"},
+  {jp:"いいですねそうしましょう", correctEn:"Sounds like a plan", choices:["Sounds","like","a","plan","good","idea","the"], difficulty:"intermediate", category:"daily"},
+  {jp:"少し遅れています", correctEn:"I am running a bit late", choices:["I","am","running","a","bit","late","little","some"], difficulty:"advanced", category:"daily"},
+],
   
 
 
   currentDataType: 'word',
+  phraseCategories: {
+    greeting: {name: "👋 挨拶・再会", emoji: "👋"},
+    daily: {name: "💬 日常会話", emoji: "💬"},
+    health: {name: "🏥 体調・怪我", emoji: "🏥"},
+    pet: {name: "🐕 ペット", emoji: "🐕"},
+    food: {name: "🍽️ 食事・外食", emoji: "🍽️"},
+    sports: {name: "🏋️ スポーツ・練習", emoji: "🏋️"},
+    reaction: {name: "😊 相槌・感情", emoji: "😊"},
+    invitation: {name: "📅 誘い・約束", emoji: "📅"},
+    farewell: {name: "👋 別れ・お礼", emoji: "👋"}
+  },
+  
+  rearrangeCategories: {
+    health: {name: "🏥 怪我・リハビリ", emoji: "🏥"},
+    pet: {name: "🐕 ペット・犬", emoji: "🐕"},
+    sports: {name: "🏉 スポーツ", emoji: "🏉"},
+    daily: {name: "💬 日常会話", emoji: "💬"},
+    learning: {name: "📚 学習・説明", emoji: "📚"}
+  },
   currentGroupNumber: null,
   weights: {},
   weightsPhrase: {},
@@ -1271,7 +1298,6 @@ const app = {
       wordCount: document.getElementById("wordCount"),
       itemTypeLabel: document.getElementById("itemTypeLabel"),
       showAllJP: document.getElementById("showAllJP"),
-      showAllJPStart: document.getElementById("showAllJPStart"),
       wordSearchInput: document.getElementById("wordSearchInput"),
       wordListContainer: document.getElementById("wordListContainer"),
       totalWordCount: document.getElementById("totalWordCount"),
@@ -1286,6 +1312,26 @@ const app = {
     this.detectNewWords();
     this.updateWordCount();
     console.log("✅ アプリ初期化完了");
+  },
+
+  phraseCategories: {
+    greeting: {name: "👋 挨拶・再会", emoji: "👋"},
+    daily: {name: "💬 日常会話", emoji: "💬"},
+    health: {name: "🏥 体調・怪我", emoji: "🏥"},
+    pet: {name: "🐕 ペット", emoji: "🐕"},
+    food: {name: "🍽️ 食事・外食", emoji: "🍽️"},
+    sports: {name: "🏋️ スポーツ・練習", emoji: "🏋️"},
+    reaction: {name: "😊 相槌・感情", emoji: "😊"},
+    invitation: {name: "📅 誘い・約束", emoji: "📅"},
+    farewell: {name: "👋 別れ・お礼", emoji: "👋"}
+  },
+  
+  rearrangeCategories: {
+    health: {name: "🏥 怪我・リハビリ", emoji: "🏥"},
+    pet: {name: "🐕 ペット・犬", emoji: "🐕"},
+    sports: {name: "🏉 スポーツ", emoji: "🏉"},
+    daily: {name: "💬 日常会話", emoji: "💬"},
+    learning: {name: "📚 学習・説明", emoji: "📚"}
   },
   
   async loadWords() {
@@ -1362,12 +1408,134 @@ const app = {
       this.els.wordMenu.classList.add('hidden');
       this.els.phraseMenu.classList.remove('hidden');
       this.els.rearrangeMenu.classList.add('hidden');
+      this.renderPhraseCategoryButtons();
     } else if (type === 'rearrange') {
       tabs[2].classList.add('active');
       this.els.wordMenu.classList.add('hidden');
       this.els.phraseMenu.classList.add('hidden');
       this.els.rearrangeMenu.classList.remove('hidden');
+      this.renderRearrangeCategoryButtons();
     }
+  },
+
+  renderPhraseCategoryButtons() {
+    let container = document.getElementById('phraseCategoryButtons');
+    if (!container) {
+      container = document.createElement('div');
+      container.id = 'phraseCategoryButtons';
+      container.className = 'category-buttons';
+      const phraseMenu = document.getElementById('phraseMenu');
+      const firstButton = phraseMenu.querySelector('.start-list');
+      firstButton.parentNode.insertBefore(container, firstButton.nextSibling);
+    } else {
+      container.innerHTML = '';
+    }
+    
+    const titleDiv = document.createElement('div');
+    titleDiv.className = 'small';
+    titleDiv.style.cssText = 'margin:16px 0 8px 0';
+    titleDiv.textContent = '📚 シーン別に学習：';
+    container.appendChild(titleDiv);
+    
+    const buttonContainer = document.createElement('div');
+    buttonContainer.className = 'category-button-grid';
+    
+    Object.keys(this.phraseCategories).forEach(catKey => {
+      const cat = this.phraseCategories[catKey];
+      const btn = document.createElement('button');
+      btn.className = 'btn btn-category';
+      btn.innerHTML = `${cat.emoji} ${cat.name.replace(/^..\s/, '')}`;
+      btn.onclick = () => this.beginPhraseCategory(catKey);
+      buttonContainer.appendChild(btn);
+    });
+    
+    container.appendChild(buttonContainer);
+  },
+  
+  renderRearrangeCategoryButtons() {
+    let container = document.getElementById('rearrangeCategoryButtons');
+    if (!container) {
+      container = document.createElement('div');
+      container.id = 'rearrangeCategoryButtons';
+      container.className = 'category-buttons';
+      const rearrangeMenu = document.getElementById('rearrangeMenu');
+      const firstButton = rearrangeMenu.querySelector('.start-list');
+      firstButton.parentNode.insertBefore(container, firstButton.nextSibling);
+    } else {
+      container.innerHTML = '';
+    }
+    
+    container.innerHTML = '<div class="small" style="margin:16px 0 8px 0">📚 シーン別に学習：</div>';
+    const buttonContainer = document.createElement('div');
+    buttonContainer.className = 'category-button-grid';
+    
+    Object.keys(this.rearrangeCategories).forEach(catKey => {
+      const cat = this.rearrangeCategories[catKey];
+      const btn = document.createElement('button');
+      btn.className = 'btn btn-category';
+      btn.innerHTML = `${cat.emoji} ${cat.name.replace(/^..\s/, '')}`;
+      btn.onclick = () => this.beginRearrangeCategory(catKey);
+      buttonContainer.appendChild(btn);
+    });
+    
+    container.appendChild(buttonContainer);
+  },
+
+  beginPhraseCategory(category) {
+    const categoryPhrases = this.phrases.filter(p => p.category === category);
+    const n = Math.min(5, categoryPhrases.length);
+    
+    this.currentMode = `category_${category}`;
+    this.currentDataType = 'phrase';
+    
+    const list = categoryPhrases.sort(() => Math.random() - 0.5).slice(0, n);
+    this.quizList = list;
+    this.quizTotal = this.quizList.length;
+    this.currentIndex = 0;
+    this.sessionScore = 0;
+    this.waitingForNext = false;
+    
+    this.els.showAllJP.checked = true;
+    
+    this.els.startScreen.classList.add("hidden");
+    this.els.statsScreen.classList.add("hidden");
+    this.els.weakScreen.classList.add("hidden");
+    this.els.wordListScreen.classList.add("hidden");
+    this.els.gameScreen.classList.remove("hidden");
+    document.querySelector('.mode-tabs').style.display = 'none';
+    
+    const catName = this.phraseCategories[category].name;
+    this.els.modeChip.textContent = `短文 ${catName} ${n}問`;
+    this.updateProgressUI();
+    this.updateWordCount();
+    this.showCurrent();
+  },
+  
+  beginRearrangeCategory(category) {
+    const categoryProblems = this.rearrangeProblems.filter(p => p.category === category);
+    const n = Math.min(5, categoryProblems.length);
+    
+    this.rearrangeMode = `category_${category}`;
+    this.currentDataType = 'rearrange';
+    
+    const list = categoryProblems.sort(() => Math.random() - 0.5).slice(0, n);
+    this.quizList = list;
+    this.quizTotal = this.quizList.length;
+    this.currentIndex = 0;
+    this.sessionScore = 0;
+    this.waitingForNext = false;
+    this.rearrangeAnswer = [];
+    
+    this.els.startScreen.classList.add("hidden");
+    this.els.gameScreen.classList.remove("hidden");
+    document.querySelector('.mode-tabs').style.display = 'none';
+    
+    const catName = this.rearrangeCategories[category].name;
+    this.els.modeChip.textContent = `並び替え ${catName} ${n}問`;
+    
+    this.updateProgressUI();
+    this.updateWordCount();
+    this.showCurrentRearrange();
   },
   
   setupEventListeners() {
@@ -1504,14 +1672,14 @@ const app = {
     this.sessionScore = 0;
     this.waitingForNext = false;
     
-    const showAllStart = this.els.showAllJPStart.checked;
-    this.els.showAllJP.checked = showAllStart;
+    this.els.showAllJP.checked = true;
     
     this.els.startScreen.classList.add("hidden");
     this.els.statsScreen.classList.add("hidden");
     this.els.weakScreen.classList.add("hidden");
     this.els.wordListScreen.classList.add("hidden");
     this.els.gameScreen.classList.remove("hidden");
+    document.querySelector('.mode-tabs').style.display = 'none';
     
     this.els.modeChip.textContent = `グループ${groupNum} 10問`;
     this.updateProgressUI();
@@ -1894,6 +2062,7 @@ if (isKat) {
     this.els.gameScreen.classList.add("hidden");
     this.els.weakScreen.classList.add("hidden");
     this.els.wordListScreen.classList.add("hidden");
+    document.querySelector('.mode-tabs').style.display = 'none';
     const todayKey = (new Date()).toISOString().slice(0, 10);
     const today = this.stats[todayKey] || {attempts: 0, corrects: 0};
     document.getElementById("todaySummary").textContent = 
@@ -1915,6 +2084,7 @@ if (isKat) {
   hideStats() {
     this.els.statsScreen.classList.add("hidden");
     this.els.startScreen.classList.remove("hidden");
+    document.querySelector('.mode-tabs').style.display = 'flex';
   },
   
   showWeakList() {
@@ -1923,6 +2093,7 @@ if (isKat) {
     this.els.gameScreen.classList.add("hidden");
     this.els.statsScreen.classList.add("hidden");
     this.els.wordListScreen.classList.add("hidden");
+    document.querySelector('.mode-tabs').style.display = 'none';
     const typeLabel = this.currentDataType === 'word' ? '単語' : '短文';
     this.els.weakListTitle.textContent = `苦手${typeLabel}一覧`;
     
@@ -1957,6 +2128,7 @@ if (isKat) {
   hideWeakList() {
     this.els.weakScreen.classList.add("hidden");
     this.els.startScreen.classList.remove("hidden");
+    document.querySelector('.mode-tabs').style.display = 'flex';
   },
   
   forceReset(en) {
@@ -1991,6 +2163,7 @@ if (isKat) {
     this.els.gameScreen.classList.add("hidden");
     this.els.statsScreen.classList.add("hidden");
     this.els.weakScreen.classList.add("hidden");
+    document.querySelector('.mode-tabs').style.display = 'none';
     let typeLabel = '単語';
     let items = this.words;
     if (this.currentDataType === 'phrase') {
@@ -2009,6 +2182,7 @@ if (isKat) {
   hideWordList() {
     this.els.wordListScreen.classList.add("hidden");
     this.els.startScreen.classList.remove("hidden");
+    document.querySelector('.mode-tabs').style.display = 'flex';
   },
   
   renderWordList(itemList) {
